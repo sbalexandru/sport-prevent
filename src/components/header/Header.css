@@ -1,0 +1,22 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  min-height: 6rem;
+  top: 0;
+  z-index: 999;
+  transition: all 0.3s;
+}
+.navbar.active {
+  transition: all 0.3s;
+  background: #ec1f85af;
+}
+
+.container {
+  width: 125rem;
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-top: 2rem;
+}

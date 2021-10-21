@@ -15,7 +15,7 @@ export const BackImg = styled.div`
 
 export const Container = styled.div`
   width: 125rem;
-  min-height: 50rem;
+  min-height: 150rem;
   margin: auto;
   font-size: 1.5rem;
   border: 1px solid green;

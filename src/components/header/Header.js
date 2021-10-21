@@ -1,15 +1,28 @@
-import React from "react";
-import { Container, Head } from "./Header.styled";
+import React, { useState } from "react";
+
+import "./Header.css";
 
 const Header = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 60) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <Head>
-      <Container>
+    <div className={navbar ? "navbar active" : "navbar"}>
+      <div className="container">
         <div>
-          <p>Csovi</p>
+          <p>Sport Prevent</p>
         </div>
-      </Container>
-    </Head>
+      </div>
+    </div>
   );
 };
 
