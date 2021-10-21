@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <Container>
       <div>
-        <p>Csovi</p>
+        <p>footer</p>
       </div>
     </Container>
   );
