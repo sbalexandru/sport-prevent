@@ -1,10 +1,12 @@
 import React from "react";
-import { BackImg, Container } from "./About.styled";
+import { images } from "../../img/Images";
+import { BackImg, Container, PageImage } from "./About.styled";
 
 const About = () => {
   return (
-    <BackImg>
+    <BackImg src={images.bgImg}>
       <Container>
+        <PageImage src={images.logo} />
         <div>valami</div>
       </Container>
     </BackImg>

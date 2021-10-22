@@ -1,25 +1,31 @@
 import styled from "styled-components";
 
 export const NavBar = styled.div`
+  position: fixed;
   width: 100%;
   background: transparent;
   margin: 0 auto;
-  border: 1px solid red;
   min-height: 6rem;
   top: 0;
   z-index: 999;
-  .NavBar.active {
-    background: linear-gradient(
-      90deg,
-      rgb(66, 2, 194) 0%,
-      rgb(0, 78, 194) 100%
-    );
+  transition: all 0.3s;
+  &.active {
+    transition: all 0.3s;
+    background: #ec1f85af;
   }
 `;
 
 export const Container = styled.div`
   width: 125rem;
-  border: 1px solid black;
   margin: auto;
-  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const PageImage = styled.img`
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
 `;
