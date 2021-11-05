@@ -6,7 +6,7 @@ import i18n from "../../i18n";
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
 
-  const [language, setLanguage] = useState("./hu" || "./ro" || "./en");
+  // const [language, setLanguage] = useState("./hu" || "./ro" || "./en");
 
   const changeBackground = () => {
     if (window.scrollY >= 60) {
