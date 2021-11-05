@@ -35,6 +35,7 @@ const Header = () => {
         <div>
           <h1> {i18n.t("form.validator.required")}</h1>;<p>Sport Prevent</p>
         </div>
+        <button>ceva</button>
         {/* <button onClick={(window.defaultLanguage = "hu")}>
           hu{console.log(defaultLanguage)}
         </button> */}
