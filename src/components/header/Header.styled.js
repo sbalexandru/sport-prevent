@@ -11,21 +11,61 @@ export const NavBar = styled.div`
   transition: all 0.3s;
   &.active {
     transition: all 0.3s;
-    background: #ec1f85af;
+    background: #e81b96e1;
   }
 `;
 
 export const Container = styled.div`
-  width: 125rem;
+  width: 90%;
   margin: auto;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
 export const PageImage = styled.img`
+  width: 32rem;
+  height: 8rem;
+`;
+
+export const BtnContainer = styled.div`
+  display: inline;
+  display: flex;
+`;
+
+export const SectionBtn = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
+  height: 3rem;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition-duration: 0.4s;
+  &:hover {
+    background-color: #ddb6cde1;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+`;
+
+export const LanguageBtn = styled.div`
+  margin: 5px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.2rem;
+  height: 3rem;
+  border: 1px solid black;
+  background-color: #ffffff;
+  transition-duration: 0.4s;
+  &:hover {
+    background-color: #ddb6cde1;
+  }
 `;

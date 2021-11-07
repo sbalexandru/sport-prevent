@@ -1,4 +1,5 @@
 import i18n from "i18next";
+import Dropdown from "../components/dropdown/Dropdown";
 
 import ro from "./ro";
 import hu from "./hu";
@@ -10,17 +11,19 @@ const resources = {
   en: { translation: en },
 };
 
-let defaultLanguage = "ro";
+let languages = "en";
 
-// if (window.currentLanguage === "hu") {
-//   defaultLanguage = "hu";
-// } else if (window.currentLanguage === "en") {
-//   defaultLanguage = "en";
+// if (window.addEventListener().Dropdown.languages === "hu") {
+//   languages = "hu";
+// } else if (window.addEventListener().Dropdown.languages === "en") {
+//   languages = "en";
+// } else if (window.addEventListener().Dropdown.languages === "ro") {
+//   languages = "ro";
 // }
 
 i18n.init({
   resources,
-  lng: defaultLanguage,
+  lng: languages,
 });
 
 export default i18n;

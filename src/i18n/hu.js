@@ -1,8 +1,11 @@
-export default // const hu: typeof ro =
-{
-  form: {
-    validator: {
-      required: "Kötelező mező",
+export default {
+  header: {
+    navbar: {
+      about: "RÓLUNK",
+      programs: "PROGRAMOK",
+      opinion: "VÉLEMÉNYEK",
+      sponsor: "TÁMOGATÓK",
+      contacts: "ELÉRHETŐSÉG",
     },
   },
 };

@@ -1,28 +1,23 @@
 import styled from "styled-components";
-import { images } from "../../img/Images";
-
-export const BackImg = styled.div`
-  width: auto;
-  height: 100vh;
-  background-image: url(${images.bgImg});
-  background-position: left;
-  background-size: cover;
-  padding-top: 124px;
-  @media (max-width: 768px) {
-    width: auto;
-  }
-`;
 
 export const Container = styled.div`
-  width: 125rem;
-  min-height: 150rem;
+  width: 80%;
+  min-height: 40rem;
   margin: auto;
   font-size: 1.5rem;
-  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
-export const PageImage = styled.img`
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
+export const TextArea = styled.p`
+  width: 50%;
+  font-size: 1.5rem;
+  margin: 30px;
+`;
+
+export const VideoFrame = styled.div`
+  width: 460px;
+  height: 315px;
+  margin: 20px;
 `;
