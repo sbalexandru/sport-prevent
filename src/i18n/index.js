@@ -1,5 +1,5 @@
 import i18n from "i18next";
-import Dropdown from "../components/dropdown/Dropdown";
+// import Dropdown from "../components/dropdown/Dropdown";
 
 import ro from "./ro";
 import hu from "./hu";

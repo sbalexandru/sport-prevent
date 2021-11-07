@@ -6,7 +6,6 @@ import {
   DropDownWrap,
 } from "./Dropdown.styled";
 import { images } from "../../img/Images";
-import i18n from "../../i18n";
 
 const DropDown = ({ values }) => {
   const [isOpen, setIsOpen] = useState(false);
