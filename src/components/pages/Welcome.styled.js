@@ -9,12 +9,27 @@ export const Container = styled.div`
 export const BackImg = styled.div`
   width: auto;
   height: 100vh;
-  background-image: url(${images.bgImg1});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 124px;
+  animation: animate 16s ease-in-out infinite;
   @media (max-width: 768px) {
     width: auto;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      background-image: url(${images.bgImg1});
+    }
+    33% {
+      background-image: url(${images.bgImg2});
+    }
+    66% {
+      background-image: url(${images.bgImg3});
+    }
+    /* 75% {
+      background-image: url(${images.bgImg1});
+    } */
   }
 `;

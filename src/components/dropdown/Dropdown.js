@@ -23,22 +23,17 @@ const DropDown = ({ values }) => {
       </SelectedValue>
       {isOpen && (
         <DropDownWrap>
-          {/* {values.map((value) => (
-            <DropDownItem onClick={() => handleValueChange(value)} key={value}>
-              {value}
-            </DropDownItem>
-          ))} */}
           <DropDownItem onClick={() => handleValueChange("HU")}>
-            <img src={images.hu} />
+            <img src={images.hu} alt="hu" />
             <p>HU</p>
           </DropDownItem>
           <DropDownItem onClick={() => handleValueChange("RO")}>
-            <img src={images.ro} />
+            <img src={images.ro} alt="ro" />
             <p>RO</p>
           </DropDownItem>
 
           <DropDownItem onClick={() => handleValueChange("EN")}>
-            <img src={images.en} />
+            <img src={images.en} alt="en" />
             <p>EN</p>
           </DropDownItem>
         </DropDownWrap>

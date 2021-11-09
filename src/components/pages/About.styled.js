@@ -10,7 +10,7 @@ export const Container = styled.div`
   justify-content: space-between;
 `;
 
-export const TextArea = styled.p`
+export const TextArea = styled.div`
   width: 50%;
   font-size: 1.5rem;
   margin: 30px;
