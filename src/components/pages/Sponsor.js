@@ -11,7 +11,7 @@ import { images } from "../../img/Images";
 const SponsorSection = () => {
   return (
     <BackImg>
-      <Container>
+      <Container className="sponsor-section" id="sponsor">
         <Title>Tamogatok</Title>
         <LogoContainer>
           <SponsorLogo src={images.Ovi_D_Pop} />

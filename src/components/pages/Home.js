@@ -3,7 +3,7 @@ import { Container, BackImg } from "./Home.styled";
 
 const WelcomeScreen = () => {
   return (
-    <BackImg>
+    <BackImg className="main-section" id="home">
       <Container />
     </BackImg>
   );

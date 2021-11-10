@@ -4,11 +4,11 @@ export const NavBar = styled.div`
   position: fixed;
   width: 100%;
   background: transparent;
-  clip-path: polygon(0 0, 100% 0, 100% 79%, 0% 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 79%, 0% 100%); */
   margin: 0 auto;
   min-height: 6rem;
   top: 0;
-  z-index: 999;
+  z-index: 99;
   transition: all 0.3s;
   &.active {
     transition: all 0.3s;
@@ -91,6 +91,7 @@ export const LanguageBtn = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 999;
   width: 5.2rem;
   height: 3rem;
   border: 1px solid black;

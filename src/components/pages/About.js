@@ -5,7 +5,7 @@ import { Container, TextArea, VideoFrame } from "./About.styled";
 
 const About = () => {
   return (
-    <Container>
+    <Container className="about-section" id="about">
       <VideoFrame
         width="460"
         height="315"

@@ -5,7 +5,7 @@ import { Container, BackColor } from "./Programs.styled";
 const ProgramsSection = () => {
   return (
     <BackColor>
-      <Container>
+      <Container className="programs-section" id="programs">
         <div></div>
       </Container>
     </BackColor>

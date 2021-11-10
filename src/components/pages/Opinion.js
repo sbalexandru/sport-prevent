@@ -4,7 +4,7 @@ import { Container } from "./Opinion.styled";
 
 const OpinionSection = () => {
   return (
-    <Container>
+    <Container className="opinion-section" id="opinion">
       <div></div>
     </Container>
   );

@@ -3,7 +3,7 @@ import { Container, Contact, Creator, Icon, Title } from "./Footer.styled";
 
 const Footer = () => {
   return (
-    <Container>
+    <Container className="contacts-section" id="contacts">
       <Contact>
         <Title>copntact</Title>
         <Icon>fb ins </Icon>
