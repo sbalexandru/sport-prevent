@@ -25,16 +25,16 @@ const DropDown = ({ values }) => {
         <DropDownWrap>
           <DropDownItem onClick={() => handleValueChange("HU")}>
             <img src={images.hu} alt="hu" />
-            <p>HU</p>
+            <strong>HU</strong>
           </DropDownItem>
           <DropDownItem onClick={() => handleValueChange("RO")}>
             <img src={images.ro} alt="ro" />
-            <p>RO</p>
+            <strong>RO</strong>
           </DropDownItem>
 
           <DropDownItem onClick={() => handleValueChange("EN")}>
             <img src={images.en} alt="en" />
-            <p>EN</p>
+            <strong>EN</strong>
           </DropDownItem>
         </DropDownWrap>
       )}

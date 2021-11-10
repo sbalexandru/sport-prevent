@@ -7,17 +7,42 @@ export const Container = styled.div`
   font-size: 1.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  @media (max-width: 360px) {
+    width: 100%;
+  }
 `;
 
 export const TextArea = styled.div`
   width: 50%;
+  padding-top: 2rem;
   font-size: 1.5rem;
   margin: 30px;
+  h2 {
+    text-align: center;
+  }
+  p {
+    padding-top: 2rem;
+    line-height: 1.7;
+    text-align: justify;
+  }
+  @media (max-width: 760px) {
+    width: 80%;
+  }
+  @media (max-width: 360px) {
+    width: 100%;
+  }
 `;
 
-export const VideoFrame = styled.div`
+export const VideoFrame = styled.iframe`
   width: 460px;
   height: 315px;
   margin: 20px;
+  @media (max-width: 760px) {
+    width: 400px;
+    height: 300px;
+  }
 `;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, BackImg } from "./Welcome.styled";
+import { Container, BackImg } from "./Home.styled";
 
 const WelcomeScreen = () => {
   return (

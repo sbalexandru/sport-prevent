@@ -1,10 +1,11 @@
 {
   "header": {
     "navbar": {
+      "home": "HOME",
       "about": "ABOUT AS",
       "programs": "PROGRAMS",
       "opinion": "OPINIONS",
-      "sponsor": "SUPPORTERS",
+      "sponsor": "SPONSOR",
       "contacts": "CONTACTS"
     }
   },

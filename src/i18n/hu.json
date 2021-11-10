@@ -1,11 +1,12 @@
 {
   "header": {
     "navbar": {
+      "home": "HOME",
       "about": "RÓLUNK",
-      "programs": "PROGRAMOK",
+      "programs": "PROGRAM",
       "opinion": "VÉLEMÉNYEK",
       "sponsor": "TÁMOGATÓK",
-      "contacts": "ELÉRHETŐSÉG"
+      "contacts": "KONTAKT"
     }
   },
   "about": {

@@ -5,6 +5,10 @@ import logo from "./headerlogo.png";
 import en from "./en.png";
 import ro from "./ro.png";
 import hu from "./hu.png";
+import tamogatok from "./tamogatok.png";
+import Ovi_D_Pop from "./Ovi_D_Pop.png";
+import megyei_tanacs from "./megyei_tanacs.png";
+import juhasz_david from "./juhasz_david.png";
 
 export const images = {
   bgImg1,
@@ -14,4 +18,8 @@ export const images = {
   en,
   ro,
   hu,
+  tamogatok,
+  Ovi_D_Pop,
+  megyei_tanacs,
+  juhasz_david,
 };

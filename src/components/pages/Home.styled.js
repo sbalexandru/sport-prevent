@@ -28,8 +28,5 @@ export const BackImg = styled.div`
     66% {
       background-image: url(${images.bgImg3});
     }
-    /* 75% {
-      background-image: url(${images.bgImg1});
-    } */
   }
 `;

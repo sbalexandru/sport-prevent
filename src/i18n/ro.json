@@ -1,6 +1,7 @@
 {
   "header": {
     "navbar": {
+      "home": "HOME",
       "about": "DESPRE NOI",
       "programs": "PROGRAME",
       "opinion": "OPINII",

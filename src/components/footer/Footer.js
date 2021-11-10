@@ -1,12 +1,17 @@
 import React from "react";
-import { Container } from "./Footer.styled";
+import { Container, Contact, Creator, Icon, Title } from "./Footer.styled";
 
 const Footer = () => {
   return (
     <Container>
-      <div>
-        <p>footer</p>
-      </div>
+      <Contact>
+        <Title>copntact</Title>
+        <Icon>fb ins </Icon>
+      </Contact>
+      <Creator>
+        <p>Created bi</p>
+        <h2>Sabau Alexandru</h2>
+      </Creator>
     </Container>
   );
 };

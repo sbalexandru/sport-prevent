@@ -4,6 +4,9 @@ export const Container = styled.div`
   width: 100%;
   position: relative;
   border-radius: 5px;
+  strong {
+    font-size: 1.2rem;
+  }
 `;
 
 export const SelectedValue = styled.div`

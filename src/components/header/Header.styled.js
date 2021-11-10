@@ -4,6 +4,7 @@ export const NavBar = styled.div`
   position: fixed;
   width: 100%;
   background: transparent;
+  clip-path: polygon(0 0, 100% 0, 100% 79%, 0% 100%);
   margin: 0 auto;
   min-height: 6rem;
   top: 0;
@@ -27,6 +28,14 @@ export const Container = styled.div`
 export const PageImage = styled.img`
   width: 32rem;
   height: 8rem;
+  @media (max-width: 760px) {
+    width: 22rem;
+    height: 6rem;
+  }
+  @media (max-width: 410px) {
+    width: 18rem;
+    height: 5rem;
+  }
 `;
 
 export const BtnContainer = styled.div`
@@ -36,7 +45,7 @@ export const BtnContainer = styled.div`
 
 export const SectionBtn = styled.div`
   text-align: center;
-  width: 10rem;
+  width: 8.5rem;
   height: 3rem;
   border: 1px solid black;
   cursor: pointer;
@@ -48,7 +57,7 @@ export const SectionBtn = styled.div`
   &:hover {
     background-color: #ddb6cde1;
   }
-  p {
+  strong {
     font-size: 1.2rem;
   }
   @media (max-width: 996px) {
@@ -120,9 +129,8 @@ export const DropDownItem = styled.div`
   justify-content: center;
   border: 1px solid black;
 
-  p {
-    font-size: 1.3rem;
-    padding: 0 0 0 3px;
+  strong {
+    font-size: 1.2rem;
   }
   img {
     width: 2rem;

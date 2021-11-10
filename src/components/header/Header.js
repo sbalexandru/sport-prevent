@@ -51,19 +51,22 @@ const Header = () => {
 
         <BtnContainer>
           <SectionBtn>
-            <p>{i18n.t("header.navbar.about")}</p>
+            <strong>{i18n.t("header.navbar.home")}</strong>
           </SectionBtn>
           <SectionBtn>
-            <p>{i18n.t("header.navbar.programs")}</p>
+            <strong>{i18n.t("header.navbar.about")}</strong>
           </SectionBtn>
           <SectionBtn>
-            <p>{i18n.t("header.navbar.opinion")}</p>
+            <strong>{i18n.t("header.navbar.programs")}</strong>
           </SectionBtn>
           <SectionBtn>
-            <p>{i18n.t("header.navbar.sponsor")}</p>
+            <strong>{i18n.t("header.navbar.opinion")}</strong>
           </SectionBtn>
           <SectionBtn>
-            <p>{i18n.t("header.navbar.contacts")}</p>
+            <strong>{i18n.t("header.navbar.sponsor")}</strong>
+          </SectionBtn>
+          <SectionBtn>
+            <strong>{i18n.t("header.navbar.contacts")}</strong>
           </SectionBtn>
 
           <MeniuDropdown onClick={() => setMenuOpen(!menuOpen)}>

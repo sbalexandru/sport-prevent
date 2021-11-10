@@ -6,15 +6,13 @@ import { Container, TextArea, VideoFrame } from "./About.styled";
 const About = () => {
   return (
     <Container>
-      <VideoFrame>
-        <iframe
-          width="460"
-          height="315"
-          src="https://www.youtube.com/embed/IuOzqZGh9u0"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        ></iframe>
-      </VideoFrame>
+      <VideoFrame
+        width="460"
+        height="315"
+        src="https://www.youtube.com/embed/IuOzqZGh9u0"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      ></VideoFrame>
       <TextArea>
         <h2>{i18n.t("about.welcome")}</h2>
         <p>{i18n.t("about.aboutme")}</p>
