@@ -42,10 +42,10 @@ const Header = () => {
   // };
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const handleChange = () => {
+
+  const closeMenu = () => {
     setMenuOpen(false);
   };
-
   window.addEventListener("scroll", changeBackground);
 
   return (
@@ -148,7 +148,7 @@ const Header = () => {
                   offset={-70}
                   duration={500}
                 >
-                  <DropDownItem onClick={() => setMenuOpen(false)}>
+                  <DropDownItem onClick={() => closeMenu()}>
                     <p>{i18n.t("header.navbar.home")}</p>
                   </DropDownItem>
                 </Link>
@@ -161,7 +161,7 @@ const Header = () => {
                   offset={-70}
                   duration={500}
                 >
-                  <DropDownItem onClick={() => setMenuOpen(false)}>
+                  <DropDownItem onClick={() => closeMenu()}>
                     <p>{i18n.t("header.navbar.about")}</p>
                   </DropDownItem>
                 </Link>
@@ -174,7 +174,7 @@ const Header = () => {
                   offset={-70}
                   duration={500}
                 >
-                  <DropDownItem onClick={() => setMenuOpen(false)}>
+                  <DropDownItem onClick={() => closeMenu()}>
                     <p>{i18n.t("header.navbar.programs")}</p>
                   </DropDownItem>
                 </Link>
@@ -187,7 +187,7 @@ const Header = () => {
                   offset={-70}
                   duration={500}
                 >
-                  <DropDownItem onClick={() => setMenuOpen(false)}>
+                  <DropDownItem onClick={() => closeMenu()}>
                     <p>{i18n.t("header.navbar.opinion")}</p>
                   </DropDownItem>
                 </Link>
@@ -200,7 +200,7 @@ const Header = () => {
                   offset={-70}
                   duration={500}
                 >
-                  <DropDownItem onClick={() => setMenuOpen(false)}>
+                  <DropDownItem onClick={() => closeMenu()}>
                     <p>{i18n.t("header.navbar.sponsor")}</p>
                   </DropDownItem>
                 </Link>
@@ -213,7 +213,7 @@ const Header = () => {
                   offset={-70}
                   duration={500}
                 >
-                  <DropDownItem onClick={() => setMenuOpen(false)}>
+                  <DropDownItem onClick={() => closeMenu()}>
                     <p>{i18n.t("header.navbar.contacts")}</p>
                   </DropDownItem>
                 </Link>
