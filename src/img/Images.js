@@ -9,6 +9,7 @@ import tamogatok from "./tamogatok.png";
 import Ovi_D_Pop from "./Ovi_D_Pop.png";
 import megyei_tanacs from "./megyei_tanacs.png";
 import juhasz_david from "./juhasz_david.png";
+import Homeback_123 from "./Homeback_3.gif";
 
 export const images = {
   bgImg1,
@@ -22,4 +23,5 @@ export const images = {
   Ovi_D_Pop,
   megyei_tanacs,
   juhasz_david,
+  Homeback_123,
 };

@@ -30,16 +30,7 @@ const Header = () => {
     }
   };
 
-  const languages = ["HU", "RO", "EN"];
-  // let defaultLanguage = "";
-
-  // const currentLanguage = () => {
-  //   if (window.language === "hu") {
-  //     defaultLanguage = "hu";
-  //   } else if (window.language === "en") {
-  //     defaultLanguage = "en";
-  //   }
-  // };
+  const languages = ["EN", "HU", "RO"];
 
   const [menuOpen, setMenuOpen] = useState(false);
 

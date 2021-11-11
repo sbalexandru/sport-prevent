@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   SelectedValue,
   DropDownItem,
   DropDownWrap,
 } from "./Dropdown.styled";
+import i18n from "../../i18n";
 import { images } from "../../img/Images";
 
 const DropDown = ({ values }) => {
@@ -15,6 +16,14 @@ const DropDown = ({ values }) => {
     setSelectedValue(value);
     setIsOpen(false);
   };
+  useEffect(() => {
+    // console.log(changeLanguage());
+  });
+  const changeLanguage = (ln) => {
+    return () => {
+      i18n.changeLanguage(ln);
+    };
+  };
 
   return (
     <Container>
@@ -23,16 +32,24 @@ const DropDown = ({ values }) => {
       </SelectedValue>
       {isOpen && (
         <DropDownWrap>
-          <DropDownItem onClick={() => handleValueChange("HU")}>
+          <DropDownItem
+            onClick={() => handleValueChange("HU") & changeLanguage("hu")}
+          >
             <img src={images.hu} alt="hu" />
+
             <strong>HU</strong>
           </DropDownItem>
-          <DropDownItem onClick={() => handleValueChange("RO")}>
+          <DropDownItem
+            onClick={() => handleValueChange("RO") & changeLanguage("ro")}
+          >
             <img src={images.ro} alt="ro" />
+
             <strong>RO</strong>
           </DropDownItem>
 
-          <DropDownItem onClick={() => handleValueChange("EN")}>
+          <DropDownItem
+            onClick={() => handleValueChange("EN") & changeLanguage("en")}
+          >
             <img src={images.en} alt="en" />
             <strong>EN</strong>
           </DropDownItem>

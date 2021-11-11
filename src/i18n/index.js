@@ -1,5 +1,5 @@
 import i18n from "i18next";
-// import Dropdown from "../components/dropdown/Dropdown";
+import { initReactI18next } from "react-i18next";
 
 import ro from "./ro.json";
 import hu from "./hu.json";
@@ -10,20 +10,11 @@ const resources = {
   hu: { translation: hu },
   en: { translation: en },
 };
+// let languages = "hu";
 
-let languages = "en";
-
-// if (window.addEventListener() === "hu") {
-//   languages = "hu";
-// } else if (window.addEventListener() === "en") {
-//   languages = "en";
-// } else if (window.addEventListener() === "ro") {
-//   languages = "ro";
-// }
-
-i18n.init({
+i18n.use(initReactI18next).init({
   resources,
-  lng: languages,
+  lng: "en",
   debug: true,
 });
 
