@@ -12,5 +12,21 @@
   "about": {
     "welcome": "Kedves Barátaim! Szeretettel köszöntünk a SportPrevent oldalán. ",
     "aboutme": "Örömünkre szolgál, hogy az aktív élet jeleként megnyithatjuk kapuinkat a sportkedvelők előtt a sporttevékenység előtt Sportegyesületünk rendszeres sport- és szabadidős tevékenységet kíván szervezni tagjai és a nagyközönség számára egyaránt. De mégis a legjobb hír a mozgással teli aktív élet szerelmeseinek, hogy számtalan ingyenes sporteseményt készítünk és szervezünk, amelyekre a karanténidőszak lejárta után kerül sor. Meghívjuk Önt, kedves barátaim, hogy osszátok meg ismerőseitekkel ezt a jó hírt és ezt a posztot, hogy csatlakozhassatok hozzánk a Facebookon. Ne maradjon le ingyenes rendezvényeinkről! Mától minden vasárnap új bejegyzéssel térünk vissza magyar, román és angol nyelven. Várjuk érdeklődését. Bármilyen kérdésével forduljon hozzánk. Mindenkinek szép vasárnapot kívánunk! Legyen kitartó ebben a nehéz időszakban! Ne feledje, hogy a mozgás segít megőrizni fizikai és érzelmi egyensúlyát! Minden jót, Csapat, SportPrevent. "
+  },
+  "programs": {
+    "programsTitle": "PROGRAMOK",
+    "childPrograms": "Gyerek Programok",
+    "adultPrograms": "Felnőtt Programok",
+    "indorPrograms": "Benti Programok",
+    "outdorPrograms": "Szabadtéri Programok"
+  },
+  "opinion": {
+    "opinionTitle": "VÉLEMÉNYEK"
+  },
+  "sponsor": {
+    "sponsorTitle": "TÁMOGATÓK"
+  },
+  "footer": {
+    "footerTitle": "KONTAKT"
   }
 }

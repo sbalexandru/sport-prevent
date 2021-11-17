@@ -5,3 +5,10 @@ export const Container = styled.div`
   min-height: 500px;
   margin: auto;
 `;
+
+export const Title = styled.h2`
+  color: black;
+  text-align: center;
+`;
+
+export const Parent = styled.div``;

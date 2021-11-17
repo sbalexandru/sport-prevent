@@ -9,22 +9,26 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+  flex-direction: column;
 `;
 
 export const Contact = styled.div`
   width: 10rem;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 `;
 export const Icon = styled.h2`
   color: green;
+  font-size: 3rem;
+  padding: 2rem;
 `;
 
 export const Title = styled.h2`
   color: red;
+  padding-top: 2rem;
 `;
 
 export const Creator = styled.div`

@@ -4,7 +4,6 @@ export const NavBar = styled.div`
   position: fixed;
   width: 100%;
   background: transparent;
-  /* clip-path: polygon(0 0, 100% 0, 100% 79%, 0% 100%); */
   margin: 0 auto;
   min-height: 6rem;
   top: 0;

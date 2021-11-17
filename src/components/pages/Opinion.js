@@ -1,11 +1,13 @@
 import React from "react";
-import { Container } from "./Opinion.styled";
+import { Container, Title, Parent } from "./Opinion.styled";
+import i18n from "../../i18n";
 // import { images } from "../../img/Images";
 
 const OpinionSection = () => {
   return (
     <Container className="opinion-section" id="opinion">
-      <div></div>
+      <Title>{i18n.t("opinion.opinionTitle")}</Title>
+      <Parent></Parent>
     </Container>
   );
 };

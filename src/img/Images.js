@@ -10,6 +10,14 @@ import Ovi_D_Pop from "./Ovi_D_Pop.png";
 import megyei_tanacs from "./megyei_tanacs.png";
 import juhasz_david from "./juhasz_david.png";
 import Homeback_123 from "./Homeback_3.gif";
+import gyerek_300 from "./gyerek_300.png";
+import gyerek_600 from "./gyerek_600.png";
+import felnott_300 from "./felnott_300.png";
+import felnott_600 from "./felnott_600.png";
+import bent_300 from "./bent_300.png";
+import bent_600 from "./bent_600.png";
+import kint_300 from "./kint_300.png";
+import kint_600 from "./kint_600.png";
 
 export const images = {
   bgImg1,
@@ -24,4 +32,12 @@ export const images = {
   megyei_tanacs,
   juhasz_david,
   Homeback_123,
+  gyerek_300,
+  gyerek_600,
+  felnott_300,
+  felnott_600,
+  bent_300,
+  bent_600,
+  kint_300,
+  kint_600,
 };
