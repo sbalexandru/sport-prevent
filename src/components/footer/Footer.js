@@ -1,7 +1,7 @@
 import React from "react";
 import i18n from "../../i18n";
 import { Container, Contact, Creator, Icon, Title } from "./Footer.styled";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { faBars, faAlignCenter } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
@@ -9,15 +9,9 @@ const Footer = () => {
     <Container className="contacts-section" id="contacts">
       <Title>{i18n.t("footer.footerTitle")}</Title>
       <Contact>
-        <Icon>
-          <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-        </Icon>
-        <Icon>
-          <FontAwesomeIcon icon={faAlignCenter}></FontAwesomeIcon>
-        </Icon>
-        <Icon>
-          <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-        </Icon>
+        <Icon icon={faBars} />
+        <Icon icon={faAlignCenter} />
+        <Icon icon={faBars} />
       </Contact>
       <Creator>
         <p>Created bi</p>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Container = styled.div`
   width: 100%;
@@ -20,10 +21,10 @@ export const Contact = styled.div`
   justify-content: space-around;
   align-items: center;
 `;
-export const Icon = styled.h2`
+export const Icon = styled(FontAwesomeIcon)`
   color: green;
   font-size: 3rem;
-  padding: 2rem;
+  margin: 2rem;
 `;
 
 export const Title = styled.h2`

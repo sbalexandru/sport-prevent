@@ -18,7 +18,7 @@ export const Title = styled.h2`
 `;
 
 export const Parent = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -51,7 +51,7 @@ export const Section = styled.div`
 `;
 
 export const ImgSection = styled.img`
-  width: 60rem;
+  width: 55rem;
   height: 337;
   z-index: 1;
 `;
