@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Container = styled.div`
   width: 100%;
@@ -21,10 +20,21 @@ export const Contact = styled.div`
   justify-content: space-around;
   align-items: center;
 `;
-export const Icon = styled(FontAwesomeIcon)`
-  color: green;
-  font-size: 3rem;
+export const Icon = styled.a`
+  font-size: 4rem;
   margin: 2rem;
+  &.facebook {
+    color: #1773ea;
+  }
+  &.mail {
+    /* border-radius: 25% 25% 25% 25%;
+    background-color: red;
+    padding: 3px; */
+    color: #ffffff;
+  }
+  &.instagram {
+    color: #ba009e;
+  }
 `;
 
 export const Title = styled.h2`
@@ -36,5 +46,15 @@ export const Creator = styled.div`
   color: #ffffff;
   position: absolute;
   bottom: 0;
+  font-size: 2rem;
   right: 2%;
+  text-align: right;
+  h2 {
+    font-family: "Estonia", cursive;
+    font-size: 3rem;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
