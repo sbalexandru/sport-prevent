@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BackColor = styled.div`
   width: 100%;
   height: auto;
-  background-color: green;
+  background-color: black;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
 `;
 
