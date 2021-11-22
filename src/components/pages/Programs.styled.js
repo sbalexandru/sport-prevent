@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// import { images } from "../../img/Images";
 
 export const Container = styled.div`
   width: 80%;
@@ -31,6 +32,7 @@ export const Child = styled.div`
   border: 1px solid black;
   margin: 20px;
   position: relative;
+  cursor: pointer;
 `;
 
 export const Section = styled.div`
@@ -52,6 +54,6 @@ export const Section = styled.div`
 
 export const ImgSection = styled.img`
   width: 55rem;
-  height: 337;
+  height: 337px;
   z-index: 1;
 `;
