@@ -15,7 +15,7 @@ export const BackColor = styled.div`
 export const Title = styled.h2`
   text-align: center;
   color: #ffffff;
-  padding-top: 50px;
+  padding: 9rem 0 5rem 0;
 `;
 
 export const Parent = styled.div`
@@ -24,7 +24,7 @@ export const Parent = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 13rem;
   margin: auto;
 `;
 
@@ -36,19 +36,22 @@ export const Child = styled.div`
 `;
 
 export const Section = styled.div`
-  height: 40px;
+  height: 6rem;
   color: #ffffff;
   text-align: right;
   padding-right: 5%;
   background-color: #e81b9686;
   z-index: 9;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   left: 0;
   right: 0;
   bottom: 0;
   p {
     font-size: 3rem;
-    padding-top: 2%;
+    left: 20px;
   }
 `;
 

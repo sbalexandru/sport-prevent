@@ -18,6 +18,11 @@ import bent_300 from "./bent_300.png";
 import bent_600 from "./bent_600.png";
 import kint_300 from "./kint_300.png";
 import kint_600 from "./kint_600.png";
+import comment1 from "./comment1.png";
+import comment2 from "./comment2.png";
+import comment3 from "./comment3.png";
+import comment4 from "./comment4.png";
+import comment5 from "./comment5.png";
 
 export const images = {
   bgImg1,
@@ -40,4 +45,9 @@ export const images = {
   bent_600,
   kint_300,
   kint_600,
+  comment1,
+  comment2,
+  comment3,
+  comment4,
+  comment5,
 };

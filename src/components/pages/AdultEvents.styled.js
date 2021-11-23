@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BackColor = styled.div`
   width: 100%;
   height: auto;
-  background-color: black;
+  background-color: #ebebeb;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
 `;
 
@@ -11,22 +11,30 @@ export const Container = styled.div`
   width: 80%;
   /* height: 100vh; */
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-bottom: 13rem;
   margin: auto;
+  &.adjust {
+    padding-top: 2rem;
+  }
+  &.bottom {
+    padding-bottom: 3rem;
+  }
 `;
 
 export const Title = styled.h2`
   text-align: center;
-  color: #ffffff;
-  padding-top: 50px;
+  padding-top: 5rem;
+  &.white {
+    padding-top: 1rem;
+  }
 `;
 
 export const Text = styled.p`
-  padding-top: 2rem;
+  padding: 2rem 6rem 2rem 6rem;
   line-height: 1.7;
-  color: #ffffff;
   text-align: justify;
   font-size: 1.5rem;
+  text-indent: 50px;
 `;
 
 export const ImgParent = styled.div`
@@ -36,12 +44,10 @@ export const ImgParent = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid green;
 `;
 
 export const ImgChild = styled.div`
   width: 24%;
-  border: 1px solid red;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -57,6 +63,6 @@ export const ImgBox = styled.img`
 `;
 
 export const ImgTitle = styled.p`
-  color: #ffffff;
+  text-align: center;
   font-size: 1.5rem;
 `;
