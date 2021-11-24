@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Container,
   Title,
@@ -8,12 +8,18 @@ import {
   ImgBox,
   ImgTitle,
   BackColor,
-} from "./OuttdorEvents.styed";
+  Model,
+} from "./Events.styed";
 import { images } from "../../../img/Images";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTimes,
+  faForward,
+  faBackward,
+} from "@fortawesome/free-solid-svg-icons";
 // import i18n from "../../../i18n";
 
 const OuttdorEvents = () => {
-  // const renderChild = () => {
   let event1 = [
     {
       id: 1,
@@ -146,26 +152,36 @@ const OuttdorEvents = () => {
     },
   ];
 
-  //   return (
-  //     <ImgParent>
-  //       {data.map((item) => {
-  //         return (
-  //           <ImgChild key={item.id}>
-  //             <ImgBox src={item.imgSrc} alt="img" />
-  //             <ImgTitle>
-  //               {item.title}
-  //               {console.log(item.title)}
-  //             </ImgTitle>
-  //           </ImgChild>
-  //         );
-  //       })}
-  //     </ImgParent>
-  //   );
-  // };
+  const [model, setModel] = useState(false);
+  const [tempImgSrc, setTempImgSrc] = useState("");
+
+  const getImg = (imgSrc) => {
+    setTempImgSrc(imgSrc);
+    setModel(true);
+  };
 
   return (
     <>
-      <BackColor>
+      <Model className={model ? "model open" : "model"}>
+        <img src={tempImgSrc} alt="img" />
+        <FontAwesomeIcon
+          className="exitBtn"
+          icon={faTimes}
+          onClick={() => setModel(false)}
+        />
+        <FontAwesomeIcon
+          className="forwardBtn"
+          icon={faForward}
+          onClick={() => setModel(false)}
+        />
+        <FontAwesomeIcon
+          className="backwardBtn"
+          icon={faBackward}
+          onClick={() => setModel(false)}
+        />
+      </Model>
+
+      <BackColor className="outdorEvent">
         <Container>
           <Title>Event title </Title>
           <Text>
@@ -193,12 +209,9 @@ const OuttdorEvents = () => {
           <ImgParent>
             {event1.map((item) => {
               return (
-                <ImgChild key={item.id}>
+                <ImgChild key={item.id} onClick={() => getImg(item.imgSrc)}>
                   <ImgBox src={item.imgSrc} alt="img" />
-                  <ImgTitle>
-                    {item.title}
-                    {console.log(item.title)}
-                  </ImgTitle>
+                  <ImgTitle>{item.title}</ImgTitle>
                 </ImgChild>
               );
             })}
@@ -225,19 +238,16 @@ const OuttdorEvents = () => {
         <ImgParent>
           {event2.map((item) => {
             return (
-              <ImgChild key={item.id}>
+              <ImgChild key={item.id} onClick={() => getImg(item.imgSrc)}>
                 <ImgBox src={item.imgSrc} alt="img" />
-                <ImgTitle>
-                  {item.title}
-                  {console.log(item.title)}
-                </ImgTitle>
+                <ImgTitle>{item.title}</ImgTitle>
               </ImgChild>
             );
           })}
         </ImgParent>
       </Container>
 
-      <BackColor>
+      <BackColor className="outdorEvent">
         <Container className="adjust">
           <Title>Event title </Title>
           <Text>
@@ -265,12 +275,9 @@ const OuttdorEvents = () => {
           <ImgParent>
             {event3.map((item) => {
               return (
-                <ImgChild key={item.id}>
+                <ImgChild key={item.id} onClick={() => getImg(item.imgSrc)}>
                   <ImgBox src={item.imgSrc} alt="img" />
-                  <ImgTitle>
-                    {item.title}
-                    {console.log(item.title)}
-                  </ImgTitle>
+                  <ImgTitle>{item.title}</ImgTitle>
                 </ImgChild>
               );
             })}

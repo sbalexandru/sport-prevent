@@ -1,9 +1,10 @@
 import React from "react";
+import App from "./App";
 import "./i18n";
+import "./index.css";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import "./index.css";
-import App from "./App";
+
 import ScrollToTop from "./components/pages/ScrollToTop";
 
 ReactDOM.render(

@@ -9,6 +9,7 @@ import { Route, Routes } from "react-router-dom";
 import HeaderImg from "./components/header/HeaderImg";
 import ChidEvents from "./components/pages/events/ChildEvents";
 import AdultEvents from "./components/pages/events/AdultEvents";
+
 import IndorEvents from "./components/pages/events/IndorEvents";
 import OuttdorEvents from "./components/pages/events/OuttdorEvents";
 
@@ -43,7 +44,7 @@ function App() {
       ></Route>
 
       <Route
-        path="/AdultEvents"
+        path="/AdultEvent"
         element={
           <>
             <HeaderImg />

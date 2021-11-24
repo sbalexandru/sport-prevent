@@ -34,7 +34,7 @@ const ProgramsSection = () => {
             </Child>
           </Link>
 
-          <Link to="/AdultEvents">
+          <Link to="/AdultEvent">
             <Child>
               <ImgSection className="adult-program" src={images.felnott_600} />
               <Section>
