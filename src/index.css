@@ -72,3 +72,5 @@ ol {
 /* End Reset */
 
 @import url("https://fonts.googleapis.com/css2?family=Estonia&display=swap");
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";

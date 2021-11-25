@@ -48,7 +48,7 @@ export const Text = styled.p`
 `;
 
 export const ImgParent = styled.div`
-  width: 100%auto;
+  width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;

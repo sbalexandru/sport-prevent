@@ -170,6 +170,7 @@ const AdultEvents = () => {
           icon={faTimes}
           onClick={() => setModel(false)}
         />
+
         <FontAwesomeIcon
           className="forwardBtn"
           icon={faForward}

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 80%;
-  min-height: 500px;
+  width: 50%;
+  min-height: 70rem;
   margin: auto;
+  position: relative;
 `;
 
 export const Title = styled.h2`
@@ -12,17 +13,11 @@ export const Title = styled.h2`
   padding: 4rem;
 `;
 
-export const Parent = styled.div`
-  width: 100%;
-  height: 50rem;
-  position: relative;
-
-  /* &.carusel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-`;
+// export const Parent = styled.div`
+//   width: 100%;
+//   height: 50rem;
+//   position: relative;
+// `;
 
 export const Child = styled.div`
   width: 50%;
