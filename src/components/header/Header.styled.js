@@ -16,7 +16,7 @@ export const NavBar = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 90%;
+  width: 96%;
   margin: auto;
   padding: 1rem;
   display: flex;
@@ -86,19 +86,20 @@ export const MeniuDropdown = styled.div`
 
 export const LanguageBtn = styled.div`
   margin: 5px;
-  border-radius: 3px;
+  /* border-radius: 3px; */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 999;
-  width: 5.2rem;
+  width: 10rem;
   height: 3rem;
-  border: 1px solid black;
-  background-color: #ffffff;
-  transition-duration: 0.4s;
-  &:hover {
+  cursor: pointer;
+  /* border: 1px solid black; */
+  /* background-color: #ffffff; */
+  /* transition-duration: 0.4s; */
+  /* &:hover {
     background-color: #ddb6cde1;
-  }
+  } */
 `;
 
 export const SelectedValue = styled.div`

@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: relative;
   border-radius: 5px;
   strong {
@@ -17,8 +21,8 @@ export const SelectedValue = styled.div`
 `;
 
 export const DropDownWrap = styled.div`
-  position: absolute;
-  top: 100%;
+  position: relative;
+  top: 25px;
   left: 0;
   right: 0;
   border: 1px solid #b0b0b0;
@@ -29,21 +33,25 @@ export const DropDownWrap = styled.div`
 `;
 
 export const DropDownItem = styled.div`
-  padding: 7px 15px;
-  /* line-height: 24px; */
+  padding: 7px;
+  line-height: 24px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-
-  p {
-    font-size: 1.3rem;
-    padding: 0 0 0 3px;
-  }
-  img {
+  span {
     width: 2rem;
     height: 2.5rem;
+    /* margin: 5px; */
   }
+  p {
+    font-size: 1.3rem;
+    margin: auto;
+    /* display: none; */
+    padding: 3px;
+  }
+
   &:hover {
     background-color: #fafafa;
   }

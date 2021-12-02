@@ -30,8 +30,6 @@ const Header = () => {
     }
   };
 
-  const languages = ["EN", "HU", "RO"];
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => {
@@ -213,7 +211,7 @@ const Header = () => {
           </MeniuDropdown>
 
           <LanguageBtn>
-            <Dropdown values={languages} />
+            <Dropdown />
           </LanguageBtn>
         </BtnContainer>
       </Container>
