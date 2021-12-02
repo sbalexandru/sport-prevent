@@ -7,23 +7,18 @@ import {
 } from "./Dropdown.styled";
 import "flag-icon-css/css/flag-icons.min.css";
 import i18next from "i18next";
+import cookies from "js-cookie";
 
 const DropDown = () => {
+  const currentLanguage = cookies.get("i18next") || "en";
   const [isOpen, setIsOpen] = useState(false);
 
   const handleValueChange = () => {
     setIsOpen(false);
   };
   useEffect(() => {
-    console.log("component did update");
-    changeLanguageValue();
-  }, []);
-
-  const changeLanguageValue = (ln) => {
-    return () => {
-      i18next.changeLanguage(ln);
-    };
-  };
+    document.body.dir = currentLanguage;
+  }, [currentLanguage]);
 
   const GlobeIcon = ({ width = 24, height = 24 }) => (
     <svg
@@ -69,6 +64,7 @@ const DropDown = () => {
               onClick={() =>
                 i18next.changeLanguage(code) && handleValueChange()
               }
+              disabled={code === currentLanguage}
             >
               <span
                 className={`flag-icon flag-icon-${country_code} mx-1`}

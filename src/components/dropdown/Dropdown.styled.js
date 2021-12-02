@@ -32,7 +32,7 @@ export const DropDownWrap = styled.div`
   z-index: 1;
 `;
 
-export const DropDownItem = styled.div`
+export const DropDownItem = styled.button`
   padding: 7px;
   line-height: 24px;
   width: 100%;
