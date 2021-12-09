@@ -4,6 +4,7 @@ import { images } from "../../img/Images";
 export const Container = styled.div`
   width: auto;
   height: 100vh;
+  margin: 0;
 `;
 
 export const BackImg = styled.div`
