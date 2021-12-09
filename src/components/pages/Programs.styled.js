@@ -4,12 +4,22 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 80%;
   margin: auto;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+  @media (max-width: 360px) {
+    width: 100%;
+  }
 `;
 
 export const BackColor = styled.div`
   width: 100%;
   clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 90%);
   background-color: #252525;
+
+  @media (max-width: 360px) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
 `;
 
 export const Title = styled.h2`
@@ -26,6 +36,13 @@ export const Parent = styled.div`
   align-items: center;
   padding-bottom: 13rem;
   margin: auto;
+
+  @media (max-width: 768px) {
+    width: 70%;
+  }
+  @media (max-width: 360px) {
+    width: 90%;
+  }
 `;
 
 export const Child = styled.div`
@@ -52,11 +69,20 @@ export const Section = styled.div`
   p {
     font-size: 3rem;
     left: 20px;
+    @media (max-width: 360px) {
+      font-size: 2rem;
+    }
   }
 `;
 
 export const ImgSection = styled.img`
-  width: 55rem;
-  height: 337px;
+  width: 100%;
+  height: auto;
   z-index: 1;
+  /* @media (max-width: 768px) {
+    width: 70%;
+  }
+  @media (max-width: 360px) {
+    width: 90%;
+  } */
 `;

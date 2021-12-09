@@ -55,4 +55,9 @@ export const DropDownItem = styled.button`
   &:hover {
     background-color: #fafafa;
   }
+  @media (max-width: 360px) {
+    p {
+      display: none;
+    }
+  }
 `;

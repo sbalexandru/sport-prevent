@@ -64,6 +64,28 @@ export const SectionBtn = styled.div`
   }
 `;
 
+export const SectionBtnHome = styled.div`
+  text-align: center;
+  width: 8.5rem;
+  height: 3rem;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 5px;
+  padding-top: 4px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition-duration: 0.4s;
+  &:hover {
+    background-color: #ddb6cde1;
+  }
+  strong {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 360px) {
+    width: 7rem;
+  }
+`;
+
 export const MeniuDropdown = styled.div`
   margin: 5px;
   font-size: 2rem;
@@ -100,6 +122,12 @@ export const LanguageBtn = styled.div`
   /* &:hover {
     background-color: #ddb6cde1;
   } */
+  @media (max-width: 768px) {
+    width: 6rem;
+  }
+  @media (max-width: 360px) {
+    width: 3rem;
+  }
 `;
 
 export const SelectedValue = styled.div`

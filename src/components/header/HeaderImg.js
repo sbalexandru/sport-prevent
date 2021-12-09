@@ -3,7 +3,7 @@ import {
   Container,
   PageImage,
   NavBar,
-  SectionBtn,
+  SectionBtnHome,
   BtnContainer,
 } from "./Header.styled";
 import { images } from "../../img/Images";
@@ -30,9 +30,9 @@ const HeaderImg = () => {
 
         <BtnContainer>
           <NavLink to="/">
-            <SectionBtn>
+            <SectionBtnHome>
               <strong>{i18n.t("header.navbar.home")}</strong>
-            </SectionBtn>
+            </SectionBtnHome>
           </NavLink>
         </BtnContainer>
       </Container>

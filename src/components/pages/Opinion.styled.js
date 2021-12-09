@@ -2,10 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 50%;
-
   margin: auto;
   position: relative;
   padding-bottom: 70px;
+  @media (max-width: 768px) {
+    width: 70%;
+  }
+  @media (max-width: 360px) {
+    width: 80%;
+  }
 `;
 
 export const Title = styled.h2`
@@ -19,6 +24,8 @@ export const Child = styled.div`
   height: 90%;
   padding-bottom: 50px;
   position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
 `;
 
 export const ImgChild = styled.img`
@@ -32,6 +39,8 @@ export const Text = styled.p`
   right: 15%;
   top: 17%;
   bottom: 17%;
+  text-overflow: ellipsis;
+  overflow: hidden;
   &.second {
     left: 50%;
     right: 15%;

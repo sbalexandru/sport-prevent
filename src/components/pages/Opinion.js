@@ -58,45 +58,50 @@ const OpinionSection = () => {
         <Child>
           <ImgChild src={images.comment1} />
           <Text>
-            asndjklaslkdnaslknf ajklsndlkasnkl njkasnd nasklnf jkanflkd asnjkdb
-            njkasklnaksljdckla nasdjclasjklncklams klnaskljdljsakln
-            klasnvjkabnslk jlkashn jkvnslkfoi jaspojcdksnhvipokxcbpojb
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus accusamus praesentium repudiandae non. Modi hic et
+            ipsum ipsa nobis unde? Ab vitae reiciendis non laboriosam porro
+            incidunt assumenda neque similique.
           </Text>
         </Child>
 
         <Child>
           <ImgChild src={images.comment5} />
           <Text className="five">
-            asndjklaslkdnaslknf ajklsndlkasnkl njkasnd nasklnf jkanflkd asnjkdb
-            njkasklnaksljdckla nasdjclasjklncklams klnaskljdljsakln
-            klasnvjkabnslk jlkashn jkvnslkfoi jaspojcdksnhvipokxcbpojb
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus accusamus praesentium repudiandae non. Modi hic et
+            ipsum ipsa nobis unde? Ab vitae reiciendis non laboriosam porro
+            incidunt assumenda neque similique.
           </Text>
         </Child>
 
         <Child>
           <ImgChild src={images.comment2} />
           <Text className="second">
-            asndjklaslkdnaslknf ajklsndlkasnkl njkasnd nasklnf jkanflkd asnjkdb
-            njkasklnaksljdckla nasdjclasjklncklams klnaskljdljsakln
-            klasnvjkabnslk jlkashn jkvnslkfoi jaspojcdksnhvipokxcbpojb
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus accusamus praesentium repudiandae non. Modi hic et
+            ipsum ipsa nobis unde? Ab vitae reiciendis non laboriosam porro
+            incidunt assumenda neque similique.
           </Text>
         </Child>
 
         <Child>
           <ImgChild src={images.comment3} />
           <Text className="triad">
-            asndjklaslkdnaslknf ajklsndlkasnkl njkasnd nasklnf jkanflkd asnjkdb
-            njkasklnaksljdckla nasdjclasjklncklams klnaskljdljsakln
-            klasnvjkabnslk jlkashn jkvnslkfoi jaspojcdksnhvipokxcbpojb
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus accusamus praesentium repudiandae non. Modi hic et
+            ipsum ipsa nobis unde? Ab vitae reiciendis non laboriosam porro
+            incidunt assumenda neque similique.
           </Text>
         </Child>
 
         <Child>
           <ImgChild src={images.comment4} />
           <Text className="four">
-            asndjklaslkdnaslknf ajklsndlkasnkl njkasnd nasklnf jkanflkd asnjkdb
-            njkasklnaksljdckla nasdjclasjklncklams klnaskljdljsakln
-            klasnvjkabnslk jlkashn jkvnslkfoi jaspojcdksnhvipokxcbpojb
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus accusamus praesentium repudiandae non. Modi hic et
+            ipsum ipsa nobis unde? Ab vitae reiciendis non laboriosam porro
+            incidunt assumenda neque similique.
           </Text>
         </Child>
       </Slider>

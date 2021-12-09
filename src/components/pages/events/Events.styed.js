@@ -16,6 +16,10 @@ export const BackColor = styled.div`
   &.outdorEvent {
     background-color: #e6d6e0;
   }
+
+  @media (max-width: 360px) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
 `;
 
 export const Container = styled.div`
@@ -28,6 +32,13 @@ export const Container = styled.div`
   }
   &.bottom {
     padding-bottom: 3rem;
+  }
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media (max-width: 360px) {
+    width: 100%;
   }
 `;
 
@@ -45,6 +56,16 @@ export const Text = styled.p`
   text-align: justify;
   font-size: 1.5rem;
   text-indent: 50px;
+  width: 80%;
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 1rem 3rem 1rem 3rem;
+  }
+
+  @media (max-width: 360px) {
+    width: 100%;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  }
 `;
 
 export const ImgParent = styled.div`
