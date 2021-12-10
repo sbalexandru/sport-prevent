@@ -43,7 +43,7 @@ export const DropDownItem = styled.button`
   span {
     width: 2rem;
     height: 2.5rem;
-    /* margin: 5px; */
+    margin: 5px;
   }
   p {
     font-size: 1.3rem;

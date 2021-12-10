@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Container,
   SelectedValue,
@@ -15,10 +15,12 @@ const DropDown = () => {
 
   const handleValueChange = () => {
     setIsOpen(false);
+    refreshPage();
   };
-  useEffect(() => {
-    document.body.dir = currentLanguage;
-  }, [currentLanguage]);
+
+  function refreshPage() {
+    window.location.reload();
+  }
 
   const GlobeIcon = ({ width = 24, height = 24 }) => (
     <svg
@@ -36,17 +38,17 @@ const DropDown = () => {
   const languages = [
     {
       code: "en",
-      name: "English",
+      name: "En",
       country_code: "gb",
     },
     {
       code: "hu",
-      name: "Magyar",
+      name: "Hu",
       country_code: "hu",
     },
     {
       code: "ro",
-      name: "România",
+      name: "Ro",
       country_code: "ro",
     },
   ];

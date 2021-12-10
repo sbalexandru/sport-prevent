@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Container, Title, Child, ImgChild, Text } from "./Opinion.styled";
 import i18n from "../../i18n";
 
