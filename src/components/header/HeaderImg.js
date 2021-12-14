@@ -10,6 +10,7 @@ import { images } from "../../img/Images";
 import i18n from "../../i18n";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
+// import DropDown from "../dropdown/Dropdown";
 
 const HeaderImg = () => {
   const [navbar, setNavbar] = useState(false);
@@ -34,6 +35,7 @@ const HeaderImg = () => {
               <strong>{i18n.t("header.navbar.home")}</strong>
             </SectionBtnHome>
           </NavLink>
+          {/* <DropDown /> */}
         </BtnContainer>
       </Container>
     </NavBar>

@@ -10,7 +10,7 @@ function VideoRender() {
       <VideoFrame
         width="460"
         height="315"
-        src="https://www.youtube.com/embed/IuOzqZGh9u0"
+        src="https://www.youtube.com/embed/J-Crtb6uHTM"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       >
@@ -22,7 +22,7 @@ function VideoRender() {
       <VideoFrame
         width="460"
         height="315"
-        src="https://www.youtube.com/watch?v=XcvZPWz510k"
+        src="https://www.youtube.com/embed/wvzMptQE-XI"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       ></VideoFrame>
@@ -32,7 +32,7 @@ function VideoRender() {
       <VideoFrame
         width="460"
         height="315"
-        src="https://www.youtube.com/embed/wvzMptQE-XI"
+        src="https://www.youtube.com/embed/IuOzqZGh9u0"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       ></VideoFrame>

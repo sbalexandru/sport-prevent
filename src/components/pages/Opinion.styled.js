@@ -1,34 +1,49 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90%;
+  width: 40%;
   margin: auto;
   position: relative;
   padding-bottom: 70px;
   .slick-next,
   .slick-prev {
-    padding: 14px;
-    width: 2vw;
-    height: 2vw;
+    width: 8rem;
+    height: 8rem;
     cursor: pointer;
-    border: none;
-    border-radius: 5vw;
-    background-color: #fff;
+    border-radius: 50%;
     z-index: 99 !important;
-    box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
     top: 40%;
     &:hover {
-      background-color: #fff;
+      background-color: #fbfbfb;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+        rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+        rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+        rgba(0, 0, 0, 0.07) 0px 32px 64px;
     }
   }
   .card_container {
     padding: 10px;
   }
   @media (max-width: 768px) {
-    width: 70%;
+    width: 80%;
+
+    .slick-next,
+    .slick-prev {
+      width: 4rem;
+      height: 4rem;
+    }
   }
   @media (max-width: 360px) {
     width: 80%;
+    .slick-next,
+    .slick-prev {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 `;
 
@@ -39,7 +54,6 @@ export const Title = styled.h2`
 `;
 
 export const Child = styled.div`
-  width: 90%;
   height: auto;
   padding-bottom: 50px;
   position: relative;
@@ -54,6 +68,9 @@ export const ImgChild = styled.img`
 
 export const Text = styled.p`
   position: absolute;
+  width: 38%;
+  height: 40%;
+  /* border: 1px solid black; */
   left: 50%;
   right: 15%;
   top: 17%;
@@ -83,5 +100,10 @@ export const Text = styled.p`
     right: 15%;
     top: 28%;
     bottom: 23%;
+  }
+  @media (max-width: 768px) {
+    /* font-size: 1rem; */
+  }
+  @media (max-width: 360px) {
   }
 `;

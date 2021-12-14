@@ -20,8 +20,8 @@ import comment2 from "./comment2.png";
 import comment3 from "./comment3.png";
 import comment4 from "./comment4.png";
 import comment5 from "./comment5.png";
-import next from "./next.png";
-import prev from "./prev.png";
+import next from "./btnnext2.png";
+import prev from "./btnback22.png";
 
 export const images = {
   bgImg1,

@@ -56,10 +56,10 @@ export const Text = styled.p`
   text-align: justify;
   font-size: 1.5rem;
   text-indent: 50px;
-  width: 80%;
+
   @media (max-width: 768px) {
     width: 90%;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem 1rem 1rem 3rem;
   }
 
   @media (max-width: 360px) {
@@ -75,6 +75,10 @@ export const ImgParent = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 768px) {
+    /* flex-direction: column; */
+  }
 `;
 
 export const ImgChild = styled.div`
@@ -91,6 +95,13 @@ export const ImgChild = styled.div`
   cursor: pointer;
   :hover {
     filter: opacity(0.8);
+  }
+  @media (max-width: 768px) {
+    width: 40%;
+  }
+
+  @media (max-width: 360px) {
+    width: 70%;
   }
 `;
 
