@@ -11,7 +11,7 @@ export const Container = styled.div`
     height: 8rem;
     cursor: pointer;
     border-radius: 50%;
-    z-index: 99 !important;
+    z-index: 99;
     background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
       rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,

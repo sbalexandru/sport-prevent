@@ -7,7 +7,7 @@ export const NavBar = styled.div`
   margin: 0 auto;
   min-height: 6rem;
   top: 0;
-  z-index: 99;
+  z-index: 999;
   transition: all 0.3s;
   &.active {
     transition: all 0.3s;

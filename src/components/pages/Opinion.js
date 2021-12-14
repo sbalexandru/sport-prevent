@@ -10,13 +10,6 @@ function SampleNextArrow(props) {
   const { className, onClick } = props;
   return (
     <img
-      // className={className}
-      // style={{
-      //   ...style,
-      //   display: "block",
-      //   background: "grey",
-      // }}
-      // onClick={onClick}
       src={images.next}
       alt="next img"
       className={className}
@@ -33,7 +26,6 @@ function SamplePrevArrow(props) {
       alt="prev btn"
       className={className}
       onClick={onClick}
-      // style={{ display: "block", background: "red" }}
     />
   );
 }
