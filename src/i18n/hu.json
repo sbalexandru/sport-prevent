@@ -21,7 +21,12 @@
     "outdorPrograms": "Szabadtéri Programok"
   },
   "opinion": {
-    "opinionTitle": "VÉLEMÉNYEK"
+    "opinionTitle": "VÉLEMÉNYEK",
+    "firstOpinion": "Kedves Barátaim! Szeretettel köszöntünk a SportPrevent oldalán. ",
+    "secondOpinion": "Örömünkre szolgál, hogy az aktív élet jeleként megnyithatjuk kapuinkat a sportkedvelők előtt a sporttevékenység előtt Sportegyesületünk",
+    "triedOpinion": "Kedves Barátaim! Szeretettel köszöntünk a SportPrevent oldalán. ",
+    "fourOpinion": "Örömünkre szolgál, hogy az aktív élet jeleként megnyithatjuk kapuinkat a sportkedvelők előtt a sporttevékenység előtt Sportegyesületünk",
+    "fiveOpinion": "Kedves Barátaim! Szeretettel köszöntünk a SportPrevent oldalán. "
   },
   "sponsor": {
     "sponsorTitle": "TÁMOGATÓK"

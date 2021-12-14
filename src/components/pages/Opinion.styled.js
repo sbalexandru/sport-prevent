@@ -1,10 +1,29 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 50%;
+  width: 90%;
   margin: auto;
   position: relative;
   padding-bottom: 70px;
+  .slick-next,
+  .slick-prev {
+    padding: 14px;
+    width: 2vw;
+    height: 2vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 5vw;
+    background-color: #fff;
+    z-index: 99 !important;
+    box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+    top: 40%;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  .card_container {
+    padding: 10px;
+  }
   @media (max-width: 768px) {
     width: 70%;
   }
@@ -20,8 +39,8 @@ export const Title = styled.h2`
 `;
 
 export const Child = styled.div`
-  width: 50%;
-  height: 90%;
+  width: 90%;
+  height: auto;
   padding-bottom: 50px;
   position: relative;
   text-overflow: ellipsis;

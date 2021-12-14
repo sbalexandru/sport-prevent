@@ -21,7 +21,12 @@
     "outdorPrograms": "Activități în Aer Liber"
   },
   "opinion": {
-    "opinionTitle": "OPINII"
+    "opinionTitle": "OPINII",
+    "firstOpinion": "Dragi prieteni, Vă întâmpinăm cu drag pe pagina SportPrevent.",
+    "secondOpinion": "Suntem încântați că ne putem deschide porțile în fata pasionaților de sport pentru desfășurarea activităților sportive",
+    "triedOpinion": "Dragi prieteni, Vă întâmpinăm cu drag pe pagina SportPrevent.",
+    "fourOpinion": "Suntem încântați că ne putem deschide porțile în fata pasionaților de sport pentru desfășurarea activităților sportive",
+    "fiveOpinion": "Dragi prieteni, Vă întâmpinăm cu drag pe pagina SportPrevent."
   },
   "sponsor": {
     "sponsorTitle": "SPONSORI"

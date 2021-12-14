@@ -7,33 +7,33 @@ import Slider from "react-slick";
 import { images } from "../../img/Images";
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
-    <div
+    <img
+      // className={className}
+      // style={{
+      //   ...style,
+      //   display: "block",
+      //   background: "grey",
+      // }}
+      // onClick={onClick}
+      src={images.next}
+      alt="next img"
       className={className}
-      style={{
-        ...style,
-        display: "block",
-        background: "black",
-        fontSize: "30px",
-        color: "red",
-      }}
       onClick={onClick}
     />
   );
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
-    <div
+    <img
+      src={images.prev}
+      alt="prev btn"
       className={className}
-      style={{
-        ...style,
-        display: "block",
-        background: "black",
-      }}
       onClick={onClick}
+      // style={{ display: "block", background: "red" }}
     />
   );
 }
@@ -42,8 +42,9 @@ const OpinionSection = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 5000,
     cssEase: "linear",
@@ -58,52 +59,27 @@ const OpinionSection = () => {
       <Slider {...settings}>
         <Child>
           <ImgChild src={images.comment1} />
-          <Text>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus accusamus praesentium repudiandae non. Modi hic et
-            ipsum ipsa nobis unde? Ab vitae reiciendis non laboriosam porro
-            incidunt assumenda neque similique.
-          </Text>
+          <Text>{i18n.t("opinion.firstOpinion")}</Text>
         </Child>
 
         <Child>
           <ImgChild src={images.comment5} />
-          <Text className="five">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus accusamus praesentium repudiandae non. Modi hic et
-            ipsum ipsa nobis unde? Ab vitae reiciendis non laboriosam porro
-            incidunt assumenda neque similique.
-          </Text>
+          <Text className="five">{i18n.t("opinion.fiveOpinion")}</Text>
         </Child>
 
         <Child>
           <ImgChild src={images.comment2} />
-          <Text className="second">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus accusamus praesentium repudiandae non. Modi hic et
-            ipsum ipsa nobis unde? Ab vitae reiciendis non laboriosam porro
-            incidunt assumenda neque similique.
-          </Text>
+          <Text className="second">{i18n.t("opinion.secondOpinion")}</Text>
         </Child>
 
         <Child>
           <ImgChild src={images.comment3} />
-          <Text className="triad">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus accusamus praesentium repudiandae non. Modi hic et
-            ipsum ipsa nobis unde? Ab vitae reiciendis non laboriosam porro
-            incidunt assumenda neque similique.
-          </Text>
+          <Text className="triad">{i18n.t("opinion.triedOpinion")}</Text>
         </Child>
 
         <Child>
           <ImgChild src={images.comment4} />
-          <Text className="four">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus accusamus praesentium repudiandae non. Modi hic et
-            ipsum ipsa nobis unde? Ab vitae reiciendis non laboriosam porro
-            incidunt assumenda neque similique.
-          </Text>
+          <Text className="four">{i18n.t("opinion.fourOpinion")}</Text>
         </Child>
       </Slider>
     </Container>

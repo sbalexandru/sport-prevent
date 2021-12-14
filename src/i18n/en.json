@@ -21,7 +21,12 @@
     "outdorPrograms": "Outdor Programs"
   },
   "opinion": {
-    "opinionTitle": "OPINION"
+    "opinionTitle": "OPINION",
+    "firstOpinion": "Dear friends, We warmly welcome you to the SportPrevent page.",
+    "secondOpinion": "We are delighted that we can open our doors in front of sports enthusiasts for sports activities, a sign of an active life.",
+    "triedOpinion": "Dear friends, We warmly welcome you to the SportPrevent page.",
+    "fourOpinion": "We are delighted that we can open our doors in front of sports enthusiasts for sports activities, a sign of an active life.",
+    "fiveOpinion": "Dear friends, We warmly welcome you to the SportPrevent page."
   },
   "sponsor": {
     "sponsorTitle": "SPONSOR"
