@@ -8,8 +8,19 @@ export const Container = styled.div`
   flex-direction: column;
   position: relative;
   border-radius: 5px;
+
   strong {
     font-size: 1.2rem;
+  }
+
+  .globeIcon {
+    fill: #0b66bb;
+    transition: all 0.3s;
+
+    :hover {
+      transition: all 0.3s;
+      fill: #af1faf;
+    }
   }
 `;
 
@@ -29,7 +40,7 @@ export const DropDownWrap = styled.div`
   border-radius: 5px;
   background-color: #ffffff;
   overflow: hidden;
-  z-index: 1;
+  z-index: 100;
 `;
 
 export const DropDownItem = styled.button`

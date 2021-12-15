@@ -73,7 +73,116 @@ export const BackImg = styled.div`
       background-image: url(${images.bgImg3});
     }
   }
-  @media (max-width: 768px) {
-    width: auto;
+  @media (max-width: 760px) {
+    @keyframes imgSlider {
+      0%,
+      100% {
+        -moz-background-image: url(${images.bgImg1_tablet});
+        -webkit-background-image: url(${images.bgImg1_tablet});
+        background-image: url(${images.bgImg1_tablet});
+      }
+      33% {
+        -moz-background-image: url(${images.bgImg2_tablet});
+        -webkit-background-image: url(${images.bgImg2_tablet});
+        background-image: url(${images.bgImg2_tablet});
+      }
+      66% {
+        -moz-background-image: url(${images.bgImg3_tablet});
+        -webkit-background-image: url(${images.bgImg3_tablet});
+        background-image: url(${images.bgImg3_tablet});
+      }
+    }
+    @-webkit-keyframes imgSlider {
+      0%,
+      100% {
+        -moz-background-image: url(${images.bgImg1_tablet});
+        -webkit-background-image: url(${images.bgImg1_tablet});
+        background-image: url(${images.bgImg1_tablet});
+      }
+      33% {
+        -moz-background-image: url(${images.bgImg2_tablet});
+        -webkit-background-image: url(${images.bgImg2_tablet});
+        background-image: url(${images.bgImg2_tablet});
+      }
+      66% {
+        -moz-background-image: url(${images.bgImg3_tablet});
+        -webkit-background-image: url(${images.bgImg3_tablet});
+        background-image: url(${images.bgImg3_tablet});
+      }
+    }
+    @-webkit-keyframes imgSlider {
+      0%,
+      100% {
+        -moz-background-image: url(${images.bgImg1_tablet});
+        -webkit-background-image: url(${images.bgImg1_tablet});
+        background-image: url(${images.bgImg1_tablet});
+      }
+      33% {
+        -moz-background-image: url(${images.bgImg2_tablet});
+        -webkit-background-image: url(${images.bgImg2_tablet});
+        background-image: url(${images.bgImg2_tablet});
+      }
+      66% {
+        -moz-background-image: url(${images.bgImg3_tablet});
+        -webkit-background-image: url(${images.bgImg3_tablet});
+        background-image: url(${images.bgImg3_tablet});
+      }
+    }
+  }
+  @media (max-width: 466px) {
+    @keyframes imgSlider {
+      0%,
+      100% {
+        -moz-background-image: url(${images.bgImg1_mobil});
+        -webkit-background-image: url(${images.bgImg1_mobil});
+        background-image: url(${images.bgImg1_mobil});
+      }
+      33% {
+        -moz-background-image: url(${images.bgImg2_mobil});
+        -webkit-background-image: url(${images.bgImg2_mobil});
+        background-image: url(${images.bgImg2_mobil});
+      }
+      66% {
+        -moz-background-image: url(${images.bgImg3_mobil});
+        -webkit-background-image: url(${images.bgImg3_mobil});
+        background-image: url(${images.bgImg3_mobil});
+      }
+    }
+    @-webkit-keyframes imgSlider {
+      0%,
+      100% {
+        -moz-background-image: url(${images.bgImg1_mobil});
+        -webkit-background-image: url(${images.bgImg1_mobil});
+        background-image: url(${images.bgImg1_mobil});
+      }
+      33% {
+        -moz-background-image: url(${images.bgImg2_mobil});
+        -webkit-background-image: url(${images.bgImg2_mobil});
+        background-image: url(${images.bgImg2_mobil});
+      }
+      66% {
+        -moz-background-image: url(${images.bgImg3_mobil});
+        -webkit-background-image: url(${images.bgImg3_mobil});
+        background-image: url(${images.bgImg3_mobil});
+      }
+    }
+    @-webkit-keyframes imgSlider {
+      0%,
+      100% {
+        -moz-background-image: url(${images.bgImg1_mobil});
+        -webkit-background-image: url(${images.bgImg1_mobil});
+        background-image: url(${images.bgImg1_mobil});
+      }
+      33% {
+        -moz-background-image: url(${images.bgImg2_mobil});
+        -webkit-background-image: url(${images.bgImg2_mobil});
+        background-image: url(${images.bgImg2_mobil});
+      }
+      66% {
+        -moz-background-image: url(${images.bgImg3_mobil});
+        -webkit-background-image: url(${images.bgImg3_mobil});
+        background-image: url(${images.bgImg3_mobil});
+      }
+    }
   }
 `;

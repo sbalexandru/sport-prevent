@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Container, Title, Child, ImgChild, Text } from "./Opinion.styled";
 import i18n from "../../i18n";
@@ -31,48 +31,72 @@ function SamplePrevArrow(props) {
 }
 
 const OpinionSection = () => {
+  const sliderContetnt = [
+    {
+      index: 5,
+      classtag: "five",
+      img: images.comment5,
+      text: i18n.t("opinion.fiveOpinion"),
+    },
+    {
+      index: 1,
+      classtag: "first",
+      img: images.comment1,
+      text: i18n.t("opinion.firstOpinion"),
+    },
+    {
+      index: 2,
+      classtag: "second",
+      img: images.comment2,
+      text: i18n.t("opinion.secondOpinion"),
+    },
+    {
+      index: 3,
+      classtag: "triad",
+      img: images.comment3,
+      text: i18n.t("opinion.triedOpinion"),
+    },
+    {
+      index: 4,
+      classtag: "four",
+      img: images.comment4,
+      text: i18n.t("opinion.firstOpinion"),
+    },
+  ];
+
+  const [imageIndex, setImageIndex] = useState(0);
+
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 1,
+    lazyLoad: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: 0,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     cssEase: "linear",
     arrows: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    beforeChange: (current, next) => setImageIndex(next),
   };
   return (
     <Container className="opinion-section" id="opinion">
       <Title>{i18n.t("opinion.opinionTitle")}</Title>
 
       <Slider {...settings}>
-        <Child>
-          <ImgChild src={images.comment1} />
-          <Text>{i18n.t("opinion.firstOpinion")}</Text>
-        </Child>
-
-        <Child>
-          <ImgChild src={images.comment5} />
-          <Text className="five">{i18n.t("opinion.fiveOpinion")}</Text>
-        </Child>
-
-        <Child>
-          <ImgChild src={images.comment2} />
-          <Text className="second">{i18n.t("opinion.secondOpinion")}</Text>
-        </Child>
-
-        <Child>
-          <ImgChild src={images.comment3} />
-          <Text className="triad">{i18n.t("opinion.triedOpinion")}</Text>
-        </Child>
-
-        <Child>
-          <ImgChild src={images.comment4} />
-          <Text className="four">{i18n.t("opinion.fourOpinion")}</Text>
-        </Child>
+        {sliderContetnt.map(({ classtag, img, text, index }) => (
+          <Child
+            key={index}
+            className={index === imageIndex ? "slide activeSlide" : "slide"}
+          >
+            <ImgChild src={img} alt={img} />
+            <Text className={classtag}>{text}</Text>
+          </Child>
+        ))}
       </Slider>
     </Container>
   );

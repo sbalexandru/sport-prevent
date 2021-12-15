@@ -1,6 +1,12 @@
 import bgImg1 from "./Homeback_1.png";
 import bgImg2 from "./Homeback_2.png";
 import bgImg3 from "./Homeback_3.png";
+import bgImg1_tablet from "./Homeback_1_tablet.png";
+import bgImg2_tablet from "./Homeback_2_tablet.png";
+import bgImg3_tablet from "./Homeback_3_tablet.png";
+import bgImg1_mobil from "./Homeback_1_Mobil.png";
+import bgImg2_mobil from "./Homeback_2_Mobil.png";
+import bgImg3_mobil from "./Homeback_3_Mobil.png";
 import logo from "./headerlogo.png";
 import tamogatok from "./tamogatok.png";
 import Ovi_D_Pop from "./Ovi_D_Pop.png";
@@ -27,6 +33,12 @@ export const images = {
   bgImg1,
   bgImg2,
   bgImg3,
+  bgImg1_mobil,
+  bgImg2_mobil,
+  bgImg3_mobil,
+  bgImg1_tablet,
+  bgImg2_tablet,
+  bgImg3_tablet,
   logo,
   tamogatok,
   Ovi_D_Pop,

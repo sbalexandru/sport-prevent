@@ -39,4 +39,5 @@ export const SponsorLogo = styled.img`
 export const Title = styled.h2`
   text-align: center;
   color: #ffffff;
+  margin-top: 2rem;
 `;
