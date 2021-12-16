@@ -38,7 +38,7 @@ export const Icon = styled.a`
 `;
 
 export const Title = styled.h2`
-  color: red;
+  color: #ffffff;
   padding-top: 2rem;
 `;
 
