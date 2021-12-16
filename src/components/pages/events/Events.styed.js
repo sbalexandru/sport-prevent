@@ -58,8 +58,7 @@ export const Text = styled.p`
   text-indent: 50px;
 
   @media (max-width: 768px) {
-    width: 90%;
-    padding: 1rem 1rem 1rem 3rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   }
 
   @media (max-width: 360px) {

@@ -33,12 +33,6 @@ function SamplePrevArrow(props) {
 const OpinionSection = () => {
   const sliderContetnt = [
     {
-      index: 4,
-      classtag: "five",
-      img: images.comment5,
-      text: i18n.t("opinion.fiveOpinion"),
-    },
-    {
       index: 0,
       classtag: "first",
       img: images.comment1,
@@ -62,9 +56,15 @@ const OpinionSection = () => {
       img: images.comment4,
       text: i18n.t("opinion.firstOpinion"),
     },
+    {
+      index: 4,
+      classtag: "five",
+      img: images.comment5,
+      text: i18n.t("opinion.fiveOpinion"),
+    },
   ];
 
-  const [imageIndex, setImageIndex] = useState(4);
+  const [imageIndex, setImageIndex] = useState(0);
 
   const settings = {
     dots: true,
@@ -81,7 +81,8 @@ const OpinionSection = () => {
     arrows: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    beforeChange: (current, next) => setImageIndex(current),
+    beforeChange: (oldIndex, newIndex) => setImageIndex(newIndex),
+    afterChange: (oldIndex, newInde) => setImageIndex(oldIndex),
   };
   return (
     <Container className="opinion-section" id="opinion">

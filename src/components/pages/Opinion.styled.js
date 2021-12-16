@@ -5,7 +5,6 @@ export const Container = styled.div`
   margin: auto;
   position: relative;
   padding-bottom: 70px;
-
   .slick-next,
   .slick-prev {
     width: 8rem;
@@ -29,7 +28,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     width: 80%;
-
+    height: 500px;
     .slick-next,
     .slick-prev {
       width: 4rem;
@@ -37,12 +36,7 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 360px) {
-    width: 80%;
-    .slick-next,
-    .slick-prev {
-      width: 4rem;
-      height: 4rem;
-    }
+    height: 400px;
   }
 `;
 
@@ -58,7 +52,6 @@ export const Child = styled.div`
   position: relative;
   text-overflow: ellipsis;
   overflow: hidden;
-  padding: 20px;
 
   &.slide {
     transform: scale(0.7);
@@ -67,8 +60,35 @@ export const Child = styled.div`
   }
 
   &.activeSlide {
-    transform: scale(1.3);
+    transform: scale(1.1);
     opacity: 1;
+  }
+  @media (max-width: 768px) {
+    height: 200px;
+    padding: 30px 0 30px 0;
+    &.slide {
+      transform: scale(0.2);
+      transition: transform 300ms;
+      opacity: 0.5;
+    }
+    &.activeSlide {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 360px) {
+    width: 80%;
+    &.slide {
+      transform: scale(0.1);
+      transition: transform 300ms;
+      opacity: 0.5;
+      width: 10px;
+    }
+    &.activeSlide {
+      transform: scale(1.5);
+      opacity: 1;
+    }
   }
 `;
 
@@ -115,7 +135,7 @@ export const Text = styled.p`
     bottom: 23%;
   }
   @media (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   @media (max-width: 360px) {
   }
