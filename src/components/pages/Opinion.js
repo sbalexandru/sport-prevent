@@ -33,38 +33,38 @@ function SamplePrevArrow(props) {
 const OpinionSection = () => {
   const sliderContetnt = [
     {
-      index: 5,
+      index: 4,
       classtag: "five",
       img: images.comment5,
       text: i18n.t("opinion.fiveOpinion"),
     },
     {
-      index: 1,
+      index: 0,
       classtag: "first",
       img: images.comment1,
       text: i18n.t("opinion.firstOpinion"),
     },
     {
-      index: 2,
+      index: 1,
       classtag: "second",
       img: images.comment2,
       text: i18n.t("opinion.secondOpinion"),
     },
     {
-      index: 3,
+      index: 2,
       classtag: "triad",
       img: images.comment3,
       text: i18n.t("opinion.triedOpinion"),
     },
     {
-      index: 4,
+      index: 3,
       classtag: "four",
       img: images.comment4,
       text: i18n.t("opinion.firstOpinion"),
     },
   ];
 
-  const [imageIndex, setImageIndex] = useState(0);
+  const [imageIndex, setImageIndex] = useState(4);
 
   const settings = {
     dots: true,
@@ -81,7 +81,7 @@ const OpinionSection = () => {
     arrows: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    beforeChange: (current, next) => setImageIndex(next),
+    beforeChange: (current, next) => setImageIndex(current),
   };
   return (
     <Container className="opinion-section" id="opinion">
@@ -93,6 +93,7 @@ const OpinionSection = () => {
             key={index}
             className={index === imageIndex ? "slide activeSlide" : "slide"}
           >
+            {console.log(index, imageIndex)}
             <ImgChild src={img} alt={img} />
             <Text className={classtag}>{text}</Text>
           </Child>

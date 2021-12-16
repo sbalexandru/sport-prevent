@@ -156,6 +156,8 @@ const AdultEvents = () => {
   const [model, setModel] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState("");
 
+  // const [imageIndex, setImageIndex] = useState();
+
   const getImg = (imgSrc) => {
     setTempImgSrc(imgSrc);
     setModel(true);
