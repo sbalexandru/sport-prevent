@@ -12,23 +12,19 @@ export const Container = styled.div`
   strong {
     font-size: 1.2rem;
   }
-
-  .globeIcon {
-    fill: #0b66bb;
-    transition: all 0.3s;
-
-    :hover {
-      transition: all 0.3s;
-      fill: #af1faf;
-    }
-  }
 `;
 
 export const SelectedValue = styled.div`
-  font-size: 16px;
+  font-size: 3rem;
   padding: 7px 15px;
   line-height: 24px;
   z-index: 2;
+  color: black;
+  transition: all 0.3s;
+  :hover {
+    transition: all 0.3s;
+    color: #af1faf;
+  }
 `;
 
 export const DropDownWrap = styled.div`
