@@ -10,7 +10,7 @@ import i18next from "i18next";
 import cookies from "js-cookie";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAtlas } from "@fortawesome/free-solid-svg-icons";
+import { faGlobeAmericas } from "@fortawesome/free-solid-svg-icons";
 
 const DropDown = () => {
   const currentLanguage = cookies.get("i18next") || "en";
@@ -46,7 +46,7 @@ const DropDown = () => {
   return (
     <Container>
       <SelectedValue onClick={() => setIsOpen(!isOpen)}>
-        <FontAwesomeIcon icon={faAtlas} className="fontIcon" />
+        <FontAwesomeIcon icon={faGlobeAmericas} className="fontIcon" />
       </SelectedValue>
 
       {isOpen &&

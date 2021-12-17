@@ -5,10 +5,12 @@ export const Container = styled.div`
   margin: auto;
   position: relative;
   padding-bottom: 70px;
+
   .slick-next,
   .slick-prev {
-    width: 8rem;
-    height: 8rem;
+    color: #5a5a5a;
+    width: 7.5rem;
+    height: 7.5rem;
     cursor: pointer;
     border-radius: 50%;
     z-index: 99;
@@ -28,7 +30,6 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     width: 80%;
-    height: 500px;
     .slick-next,
     .slick-prev {
       width: 4rem;
@@ -47,7 +48,6 @@ export const Title = styled.h2`
 `;
 
 export const Child = styled.div`
-  height: auto;
   padding-bottom: 50px;
   position: relative;
   text-overflow: ellipsis;
@@ -60,11 +60,10 @@ export const Child = styled.div`
   }
 
   &.activeSlide {
-    transform: scale(1.1);
+    transform: scale(1);
     opacity: 1;
   }
   @media (max-width: 768px) {
-    height: 200px;
     padding: 30px 0 30px 0;
     &.slide {
       transform: scale(0.2);
@@ -72,7 +71,7 @@ export const Child = styled.div`
       opacity: 0.5;
     }
     &.activeSlide {
-      transform: scale(1.5);
+      transform: scale(1);
       opacity: 1;
     }
   }
@@ -86,7 +85,7 @@ export const Child = styled.div`
       width: 10px;
     }
     &.activeSlide {
-      transform: scale(1.5);
+      transform: scale(1);
       opacity: 1;
     }
   }
@@ -104,38 +103,70 @@ export const Text = styled.p`
   /* border: 1px solid black; */
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 0.9rem;
   &.first {
     left: 48%;
     right: 15%;
-    top: 25%;
+    top: 15%;
     bottom: 27%;
   }
   &.second {
     left: 45%;
     right: 15%;
-    top: 28%;
+    top: 19%;
     bottom: 23%;
   }
   &.triad {
     left: 17%;
     right: 45%;
-    top: 25%;
+    top: 18%;
     bottom: 17%;
   }
   &.four {
     left: 17%;
     right: 45%;
-    top: 24%;
+    top: 18%;
     bottom: 17%;
   }
   &.five {
     left: 45%;
     right: 15%;
-    top: 29%;
+    top: 21%;
     bottom: 23%;
   }
-  @media (max-width: 768px) {
-    font-size: 0.9rem;
+  @media (max-width: 760px) {
+    font-size: 1.2rem;
+
+    &.first {
+      left: 48%;
+      right: 15%;
+      top: 25%;
+      bottom: 27%;
+    }
+    &.second {
+      left: 45%;
+      right: 15%;
+      top: 28%;
+      bottom: 23%;
+    }
+    &.triad {
+      left: 17%;
+      right: 45%;
+      top: 25%;
+      bottom: 17%;
+    }
+    &.four {
+      left: 17%;
+      right: 45%;
+      top: 24%;
+      bottom: 17%;
+    }
+    &.five {
+      left: 45%;
+      right: 15%;
+      top: 29%;
+      bottom: 23%;
+    }
   }
   @media (max-width: 360px) {
   }

@@ -15,11 +15,11 @@ export const Container = styled.div`
 `;
 
 export const SelectedValue = styled.div`
-  font-size: 3rem;
+  font-size: 4rem;
   padding: 7px 15px;
   line-height: 24px;
   z-index: 2;
-  color: black;
+  color: #cacaca;
   transition: all 0.3s;
   :hover {
     transition: all 0.3s;
@@ -55,7 +55,6 @@ export const DropDownItem = styled.button`
   p {
     font-size: 1.3rem;
     margin: auto;
-    /* display: none; */
     padding: 3px;
   }
 

@@ -6,12 +6,14 @@ import i18n from "../../i18n";
 import Slider from "react-slick";
 import { images } from "../../img/Images";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+
 function SampleNextArrow(props) {
   const { className, onClick } = props;
   return (
-    <img
-      src={images.next}
-      alt="next img"
+    <FontAwesomeIcon
+      icon={faAngleRight}
       className={className}
       onClick={onClick}
     />
@@ -21,9 +23,8 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { className, onClick } = props;
   return (
-    <img
-      src={images.prev}
-      alt="prev btn"
+    <FontAwesomeIcon
+      icon={faAngleLeft}
       className={className}
       onClick={onClick}
     />
@@ -67,22 +68,31 @@ const OpinionSection = () => {
   const [imageIndex, setImageIndex] = useState(0);
 
   const settings = {
+    arrows: true,
+    autoplay: true,
     dots: true,
+    centerMode: true,
     infinite: true,
     lazyLoad: true,
+    autoplaySpeed: 4000,
+    centerPadding: 0,
+    cssEase: "linear",
+    initialSlide: 0,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: 0,
-    initialSlide: 0,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    cssEase: "linear",
-    arrows: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     beforeChange: (oldIndex, newIndex) => setImageIndex(newIndex),
     afterChange: (oldIndex, newInde) => setImageIndex(oldIndex),
+    responsive: [
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <Container className="opinion-section" id="opinion">
