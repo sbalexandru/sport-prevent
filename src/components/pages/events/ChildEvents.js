@@ -1,169 +1,218 @@
-import React, { useState } from "react";
+import React from "react"; // , { useState }
 import {
   Container,
   Title,
   Text,
-  ImgParent,
-  ImgChild,
-  ImgBox,
-  ImgTitle,
+  // ImgParent,
+  // ImgChild,
+  // ImgBox,
+  // ImgTitle,
   BackColor,
-  Model,
+  // Model,
 } from "./Events.styed";
 import { images } from "../../../img/Images";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTimes,
-  faForward,
-  faBackward,
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faTimes,
+//   faForward,
+//   faBackward,
+// } from "@fortawesome/free-solid-svg-icons";
+import ImageGallery from "react-image-gallery";
 
 import i18n from "../../../i18n";
 
 const ChildEvents = () => {
   let event1 = [
     {
-      id: 1,
-      imgSrc: images.gyerek_600,
-      title: "asdasdasd",
+      // id: 1,
+      original: images.gyerek_600,
+      thumbnail: images.gyerek_600,
+      originalAlt: " images.gyerek_600",
+      thumbnailAlt: " images.gyerek_600",
     },
     {
-      id: 2,
-      imgSrc: images.comment1,
-      title: "dasdasdas",
+      // id: 2,
+      original: images.comment1,
+      thumbnail: images.comment1,
+      originalAlt: "images.comment1",
+      thumbnailAlt: " images.comment1",
     },
     {
-      id: 3,
-      imgSrc: images.gyerek_600,
-      title: "sdfsdfsdf asd ",
+      // id: 3,
+      original: images.gyerek_600,
+      thumbnail: images.gyerek_600,
+      originalAlt: " images.gyerek_600",
+      thumbnailAlt: " images.gyerek_600",
     },
     {
-      id: 4,
-      imgSrc: images.comment1,
-      title: "fas asf dsf",
+      // id: 4,
+      original: images.comment1,
+      thumbnail: images.comment1,
+      originalAlt: " images.comment1",
+      thumbnailAlt: " images.comment1",
     },
 
     {
-      id: 5,
-      imgSrc: images.gyerek_600,
-      title: "sdf sdfg sd",
+      // id: 5,
+      original: images.gyerek_600,
+      thumbnail: images.gyerek_600,
+      originalAlt: " images.gyerek_600",
+      thumbnailAlt: " images.gyerek_600",
     },
     {
-      id: 6,
-      imgSrc: images.comment1,
-      title: "rwe rwe we",
+      // id: 6,
+      original: images.comment1,
+      thumbnail: images.comment1,
+      originalAlt: " images.comment1",
+      thumbnailAlt: "images.comment1",
     },
     {
-      id: 7,
-      imgSrc: images.comment2,
-      title: "rwe rwe we",
+      // id: 7,
+      original: images.comment2,
+      thumbnail: images.comment2,
+      originalAlt: " images.comment2",
+      thumbnailAlt: " images.comment2",
     },
     {
-      id: 8,
-      imgSrc: images.comment4,
-      title: "rwe rwe we",
+      // id: 8,
+      original: images.comment4,
+      thumbnail: images.comment4,
+      originalAlt: " images.comment4",
+      thumbnailAlt: " images.comment4",
     },
   ];
 
   let event2 = [
     {
-      id: 1,
-      imgSrc: images.gyerek_600,
-      title: "asdasdasd",
+      // id: 1,
+      original: images.gyerek_600,
+      thumbnail: images.gyerek_600,
+      originalAlt: " images.gyerek_600",
+      thumbnailAlt: " images.gyerek_600",
     },
     {
-      id: 2,
-      imgSrc: images.logo,
-      title: "dasdasdas",
+      // id: 2,
+      original: images.comment1,
+      thumbnail: images.comment1,
+      originalAlt: "images.comment1",
+      thumbnailAlt: " images.comment1",
     },
     {
-      id: 3,
-      imgSrc: images.comment5,
-      title: "sdfsdfsdf asd ",
+      // id: 3,
+      original: images.gyerek_600,
+      thumbnail: images.gyerek_600,
+      originalAlt: " images.gyerek_600",
+      thumbnailAlt: " images.gyerek_600",
     },
     {
-      id: 4,
-      imgSrc: images.comment1,
-      title: "fas asf dsf",
+      // id: 4,
+      original: images.comment1,
+      thumbnail: images.comment1,
+      originalAlt: " images.comment1",
+      thumbnailAlt: " images.comment1",
     },
 
     {
-      id: 5,
-      imgSrc: images.bent_600,
-      title: "sdf sdfg sd",
+      // id: 5,
+      original: images.gyerek_600,
+      thumbnail: images.gyerek_600,
+      originalAlt: " images.gyerek_600",
+      thumbnailAlt: " images.gyerek_600",
     },
     {
-      id: 6,
-      imgSrc: images.kint_300,
-      title: "rwe rwe we",
+      // id: 6,
+      original: images.comment1,
+      thumbnail: images.comment1,
+      originalAlt: " images.comment1",
+      thumbnailAlt: "images.comment1",
     },
     {
-      id: 7,
-      imgSrc: images.gyerek_300,
-      title: "rwe rwe we",
+      // id: 7,
+      original: images.comment2,
+      thumbnail: images.comment2,
+      originalAlt: " images.comment2",
+      thumbnailAlt: " images.comment2",
     },
     {
-      id: 8,
-      imgSrc: images.comment4,
-      title: "rwe rwe we",
+      // id: 8,
+      original: images.comment4,
+      thumbnail: images.comment4,
+      originalAlt: " images.comment4",
+      thumbnailAlt: " images.comment4",
     },
   ];
 
   let event3 = [
     {
-      id: 1,
-      imgSrc: images.kint_300,
-      title: "asdasdasd",
+      // id: 1,
+      original: images.gyerek_600,
+      thumbnail: images.gyerek_600,
+      originalAlt: " images.gyerek_600",
+      thumbnailAlt: " images.gyerek_600",
     },
     {
-      id: 2,
-      imgSrc: images.logo,
-      title: "dasdasdas",
+      // id: 2,
+      original: images.comment1,
+      thumbnail: images.comment1,
+      originalAlt: "images.comment1",
+      thumbnailAlt: " images.comment1",
     },
     {
-      id: 3,
-      imgSrc: images.bgImg1,
-      title: "sdfsdfsdf asd ",
+      // id: 3,
+      original: images.gyerek_600,
+      thumbnail: images.gyerek_600,
+      originalAlt: " images.gyerek_600",
+      thumbnailAlt: " images.gyerek_600",
     },
     {
-      id: 4,
-      imgSrc: images.felnott_600,
-      title: "fas asf dsf",
+      // id: 4,
+      original: images.comment1,
+      thumbnail: images.comment1,
+      originalAlt: " images.comment1",
+      thumbnailAlt: " images.comment1",
     },
 
     {
-      id: 5,
-      imgSrc: images.bent_600,
-      title: "sdf sdfg sd",
+      // id: 5,
+      original: images.gyerek_600,
+      thumbnail: images.gyerek_600,
+      originalAlt: " images.gyerek_600",
+      thumbnailAlt: " images.gyerek_600",
     },
     {
-      id: 6,
-      imgSrc: images.comment2,
-      title: "rwe rwe we",
+      // id: 6,
+      original: images.comment1,
+      thumbnail: images.comment1,
+      originalAlt: " images.comment1",
+      thumbnailAlt: "images.comment1",
     },
     {
-      id: 7,
-      imgSrc: images.comment5,
-      title: "rwe rwe we",
+      // id: 7,
+      original: images.comment2,
+      thumbnail: images.comment2,
+      originalAlt: " images.comment2",
+      thumbnailAlt: " images.comment2",
     },
     {
-      id: 8,
-      imgSrc: images.logo,
-      title: "rwe rwe we",
+      // id: 8,
+      original: images.comment4,
+      thumbnail: images.comment4,
+      originalAlt: " images.comment4",
+      thumbnailAlt: " images.comment4",
     },
   ];
 
-  const [model, setModel] = useState(false);
-  const [tempImgSrc, setTempImgSrc] = useState("");
+  // const [model, setModel] = useState(false);
+  // const [tempImgSrc, setTempImgSrc] = useState("");
 
-  const getImg = (imgSrc) => {
-    setTempImgSrc(imgSrc);
-    setModel(true);
-  };
+  // const getImg = (imgSrc) => {
+  //   setTempImgSrc(imgSrc);
+  //   setModel(true);
+  // };
 
   return (
     <>
-      <Model className={model ? "model open" : "model"}>
+      {/* <Model className={model ? "model open" : "model"}>
         <img src={tempImgSrc} alt="img" />
         <FontAwesomeIcon
           className="exitBtn"
@@ -180,14 +229,14 @@ const ChildEvents = () => {
           icon={faBackward}
           onClick={() => setModel(false)}
         />
-      </Model>
+      </Model> */}
       <BackColor className="childEvent">
         <Container>
           <Title>{i18n.t("childEvents.firstEvent.childEventTitle")}</Title>
 
           <Text>{i18n.t("childEvents.firstEvent.childEventDescription")}</Text>
-
-          <ImgParent>
+          <ImageGallery items={event1} lazyLoad={true} showThumbnails={true} />
+          {/* <ImgParent>
             {event1.map((item) => {
               return (
                 <ImgChild key={item.id} onClick={() => getImg(item.imgSrc)}>
@@ -196,7 +245,7 @@ const ChildEvents = () => {
                 </ImgChild>
               );
             })}
-          </ImgParent>
+          </ImgParent> */}
         </Container>
       </BackColor>
 
@@ -206,8 +255,9 @@ const ChildEvents = () => {
         </Title>
 
         <Text>{i18n.t("childEvents.secondEvent.childEventDescription")}</Text>
+        <ImageGallery items={event2} lazyLoad={true} showThumbnails={true} />
 
-        <ImgParent>
+        {/* <ImgParent>
           {event2.map((item) => {
             return (
               <ImgChild key={item.id} onClick={() => getImg(item.imgSrc)}>
@@ -216,7 +266,7 @@ const ChildEvents = () => {
               </ImgChild>
             );
           })}
-        </ImgParent>
+        </ImgParent> */}
       </Container>
 
       <BackColor className="childEvent">
@@ -224,8 +274,9 @@ const ChildEvents = () => {
           <Title>{i18n.t("childEvents.triedEvent.childEventTitle")}</Title>
 
           <Text>{i18n.t("childEvents.triedEvent.childEventDescription")}</Text>
+          <ImageGallery items={event3} lazyLoad={true} showThumbnails={true} />
 
-          <ImgParent>
+          {/* <ImgParent>
             {event3.map((item) => {
               return (
                 <ImgChild key={item.id} onClick={() => getImg(item.imgSrc)}>
@@ -234,7 +285,7 @@ const ChildEvents = () => {
                 </ImgChild>
               );
             })}
-          </ImgParent>
+          </ImgParent> */}
         </Container>
       </BackColor>
     </>

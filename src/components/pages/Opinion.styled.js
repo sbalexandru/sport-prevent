@@ -50,8 +50,6 @@ export const Title = styled.h2`
 export const Child = styled.div`
   padding-bottom: 50px;
   position: relative;
-  text-overflow: ellipsis;
-  overflow: hidden;
 
   &.slide {
     transform: scale(0.7);
@@ -98,12 +96,13 @@ export const ImgChild = styled.img`
 
 export const Text = styled.p`
   position: absolute;
+  text-indent: 5%;
   width: 38%;
   height: 45%;
   /* border: 1px solid black; */
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 0.9rem;
+
   &.first {
     left: 48%;
     right: 15%;
