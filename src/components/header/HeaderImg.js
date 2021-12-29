@@ -4,13 +4,14 @@ import {
   PageImage,
   NavBar,
   SectionBtnHome,
+  LanguageBtn,
   BtnContainer,
 } from "./Header.styled";
 import { images } from "../../img/Images";
 import i18n from "../../i18n";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
-// import DropDown from "../dropdown/Dropdown";
+import Dropdown from "../dropdown/Dropdown";
 
 const HeaderImg = () => {
   const [navbar, setNavbar] = useState(false);
@@ -35,7 +36,9 @@ const HeaderImg = () => {
               <strong>{i18n.t("header.navbar.home")}</strong>
             </SectionBtnHome>
           </NavLink>
-          {/* <DropDown /> */}
+          <LanguageBtn>
+            <Dropdown />
+          </LanguageBtn>
         </BtnContainer>
       </Container>
     </NavBar>
