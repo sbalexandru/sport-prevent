@@ -28,7 +28,7 @@ const Footer = () => {
       </Contact>
       <Creator>
         <FontAwesomeIcon icon={faCopyright} />
-        <a href="https://sabau-alex-personal-page.netlify.app" alt="Creator">
+        <a href="https://alex-code.netlify.app/" alt="Creator">
           <h2>Sabău Alexandru</h2>
         </a>
       </Creator>
