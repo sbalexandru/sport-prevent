@@ -108,7 +108,7 @@ export const MeniuDropdown = styled.div`
 
 export const LanguageBtn = styled.div`
   margin: 5px;
-  /* border-radius: 3px; */
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,12 +116,6 @@ export const LanguageBtn = styled.div`
   width: 10rem;
   height: 3rem;
   cursor: pointer;
-  /* border: 1px solid black; */
-  /* background-color: #ffffff; */
-  /* transition-duration: 0.4s; */
-  /* &:hover {
-    background-color: #ddb6cde1;
-  } */
   @media (max-width: 768px) {
     width: 6rem;
   }
