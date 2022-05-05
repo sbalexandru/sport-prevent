@@ -3,13 +3,13 @@ import { images } from "../../img/Images";
 
 export const ScrollBtn = styled.div`
   &.opacity-100 {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     position: fixed;
     border: 3px solid #ffffff;
     right: 40px;
-    bottom: 20px;
+    bottom: 70px;
     z-index: 999;
     background-image: url(${images.UpArrow});
     background-position: cover;
@@ -27,6 +27,6 @@ export const ScrollBtn = styled.div`
   &.opacity-0 {
     opacity: 0;
     bottom: -60px;
-    transition: all 0.5s;
+    transition: all 0.3s;
   }
 `;
