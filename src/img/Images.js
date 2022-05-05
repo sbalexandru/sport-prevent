@@ -28,6 +28,7 @@ import comment4 from "./comment4.png";
 import comment5 from "./comment5.png";
 import next from "./btnnext2.png";
 import prev from "./btnback22.png";
+import UpArrow from "./arrow up.jpg";
 
 export const images = {
   bgImg1,
@@ -60,4 +61,5 @@ export const images = {
   comment5,
   next,
   prev,
+  UpArrow,
 };

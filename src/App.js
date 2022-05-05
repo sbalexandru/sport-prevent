@@ -12,6 +12,7 @@ import AdultEvents from "./components/pages/events/AdultEvents";
 
 import IndorEvents from "./components/pages/events/IndorEvents";
 import OuttdorEvents from "./components/pages/events/OuttdorEvents";
+import ScrollToTop from "./components/pages/ScrollToTop";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <ProgramsSection />
             <OpinionSection />
             <SponsorSection />
+            <ScrollToTop />
             <Footer />
           </>
         }
@@ -38,6 +40,7 @@ function App() {
           <>
             <HeaderImg />
             <ChidEvents />
+            <ScrollToTop />
             <Footer />
           </>
         }
@@ -49,6 +52,7 @@ function App() {
           <>
             <HeaderImg />
             <AdultEvents />
+            <ScrollToTop />
             <Footer />
           </>
         }
@@ -60,6 +64,7 @@ function App() {
           <>
             <HeaderImg />
             <IndorEvents />
+            <ScrollToTop />
             <Footer />
           </>
         }
@@ -71,6 +76,7 @@ function App() {
           <>
             <HeaderImg />
             <OuttdorEvents />
+            <ScrollToTop />
             <Footer />
           </>
         }

@@ -104,7 +104,6 @@ const OpinionSection = () => {
             key={index}
             className={index === imageIndex ? "slide activeSlide" : "slide"}
           >
-            {console.log(index, imageIndex)}
             <ImgChild src={img} alt={img} />
             <Text className={classtag}>{text}</Text>
           </Child>

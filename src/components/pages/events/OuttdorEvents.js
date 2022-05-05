@@ -11,12 +11,7 @@ import {
   // Model,
 } from "./Events.styed";
 import { images } from "../../../img/Images";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faTimes,
-//   faForward,
-//   faBackward,
-// } from "@fortawesome/free-solid-svg-icons";
+
 import ImageGallery from "react-image-gallery";
 
 import i18n from "../../../i18n";
@@ -24,28 +19,24 @@ import i18n from "../../../i18n";
 const OuttdorEvents = () => {
   let event1 = [
     {
-      // id: 1,
       original: images.gyerek_600,
       thumbnail: images.gyerek_600,
       originalAlt: " images.gyerek_600",
       thumbnailAlt: " images.gyerek_600",
     },
     {
-      // id: 2,
       original: images.comment1,
       thumbnail: images.comment1,
       originalAlt: "images.comment1",
       thumbnailAlt: " images.comment1",
     },
     {
-      // id: 3,
       original: images.gyerek_600,
       thumbnail: images.gyerek_600,
       originalAlt: " images.gyerek_600",
       thumbnailAlt: " images.gyerek_600",
     },
     {
-      // id: 4,
       original: images.comment1,
       thumbnail: images.comment1,
       originalAlt: " images.comment1",
@@ -53,28 +44,24 @@ const OuttdorEvents = () => {
     },
 
     {
-      // id: 5,
       original: images.gyerek_600,
       thumbnail: images.gyerek_600,
       originalAlt: " images.gyerek_600",
       thumbnailAlt: " images.gyerek_600",
     },
     {
-      // id: 6,
       original: images.comment1,
       thumbnail: images.comment1,
       originalAlt: " images.comment1",
       thumbnailAlt: "images.comment1",
     },
     {
-      // id: 7,
       original: images.comment2,
       thumbnail: images.comment2,
       originalAlt: " images.comment2",
       thumbnailAlt: " images.comment2",
     },
     {
-      // id: 8,
       original: images.comment4,
       thumbnail: images.comment4,
       originalAlt: " images.comment4",
@@ -84,28 +71,24 @@ const OuttdorEvents = () => {
 
   let event2 = [
     {
-      // id: 1,
       original: images.gyerek_600,
       thumbnail: images.gyerek_600,
       originalAlt: " images.gyerek_600",
       thumbnailAlt: " images.gyerek_600",
     },
     {
-      // id: 2,
       original: images.comment1,
       thumbnail: images.comment1,
       originalAlt: "images.comment1",
       thumbnailAlt: " images.comment1",
     },
     {
-      // id: 3,
       original: images.gyerek_600,
       thumbnail: images.gyerek_600,
       originalAlt: " images.gyerek_600",
       thumbnailAlt: " images.gyerek_600",
     },
     {
-      // id: 4,
       original: images.comment1,
       thumbnail: images.comment1,
       originalAlt: " images.comment1",
@@ -113,28 +96,24 @@ const OuttdorEvents = () => {
     },
 
     {
-      // id: 5,
       original: images.gyerek_600,
       thumbnail: images.gyerek_600,
       originalAlt: " images.gyerek_600",
       thumbnailAlt: " images.gyerek_600",
     },
     {
-      // id: 6,
       original: images.comment1,
       thumbnail: images.comment1,
       originalAlt: " images.comment1",
       thumbnailAlt: "images.comment1",
     },
     {
-      // id: 7,
       original: images.comment2,
       thumbnail: images.comment2,
       originalAlt: " images.comment2",
       thumbnailAlt: " images.comment2",
     },
     {
-      // id: 8,
       original: images.comment4,
       thumbnail: images.comment4,
       originalAlt: " images.comment4",
@@ -144,28 +123,24 @@ const OuttdorEvents = () => {
 
   let event3 = [
     {
-      // id: 1,
       original: images.gyerek_600,
       thumbnail: images.gyerek_600,
       originalAlt: " images.gyerek_600",
       thumbnailAlt: " images.gyerek_600",
     },
     {
-      // id: 2,
       original: images.comment1,
       thumbnail: images.comment1,
       originalAlt: "images.comment1",
       thumbnailAlt: " images.comment1",
     },
     {
-      // id: 3,
       original: images.gyerek_600,
       thumbnail: images.gyerek_600,
       originalAlt: " images.gyerek_600",
       thumbnailAlt: " images.gyerek_600",
     },
     {
-      // id: 4,
       original: images.comment1,
       thumbnail: images.comment1,
       originalAlt: " images.comment1",
@@ -173,28 +148,24 @@ const OuttdorEvents = () => {
     },
 
     {
-      // id: 5,
       original: images.gyerek_600,
       thumbnail: images.gyerek_600,
       originalAlt: " images.gyerek_600",
       thumbnailAlt: " images.gyerek_600",
     },
     {
-      // id: 6,
       original: images.comment1,
       thumbnail: images.comment1,
       originalAlt: " images.comment1",
       thumbnailAlt: "images.comment1",
     },
     {
-      // id: 7,
       original: images.comment2,
       thumbnail: images.comment2,
       originalAlt: " images.comment2",
       thumbnailAlt: " images.comment2",
     },
     {
-      // id: 8,
       original: images.comment4,
       thumbnail: images.comment4,
       originalAlt: " images.comment4",
@@ -202,34 +173,8 @@ const OuttdorEvents = () => {
     },
   ];
 
-  // const [model, setModel] = useState(false);
-  // const [tempImgSrc, setTempImgSrc] = useState("");
-
-  // const getImg = (imgSrc) => {
-  //   setTempImgSrc(imgSrc);
-  //   setModel(true);
-  // };
   return (
     <>
-      {/* <Model className={model ? "model open" : "model"}>
-        <img src={tempImgSrc} alt="img" />
-        <FontAwesomeIcon
-          className="exitBtn"
-          icon={faTimes}
-          onClick={() => setModel(false)}
-        />
-        <FontAwesomeIcon
-          className="forwardBtn"
-          icon={faForward}
-          onClick={() => setModel(false)}
-        />
-        <FontAwesomeIcon
-          className="backwardBtn"
-          icon={faBackward}
-          onClick={() => setModel(false)}
-        />
-      </Model> */}
-
       <BackColor className="outdorEvent">
         <Container>
           <Title>{i18n.t("outtdorEvents.firstEvent.outtdorEventTitle")}</Title>
@@ -238,17 +183,6 @@ const OuttdorEvents = () => {
             {i18n.t("outtdorEvents.firstEvent.outtdorEventDescription")}
           </Text>
           <ImageGallery items={event1} lazyLoad={true} showThumbnails={true} />
-
-          {/* <ImgParent>
-            {event1.map((item) => {
-              return (
-                <ImgChild key={item.id} onClick={() => getImg(item.imgSrc)}>
-                  <ImgBox src={item.imgSrc} alt="img" />
-                  <ImgTitle>{item.title}</ImgTitle>
-                </ImgChild>
-              );
-            })}
-          </ImgParent> */}
         </Container>
       </BackColor>
 
@@ -261,17 +195,6 @@ const OuttdorEvents = () => {
           {i18n.t("outtdorEvents.secondEvent.outtdorEventDescription")}
         </Text>
         <ImageGallery items={event2} lazyLoad={true} showThumbnails={true} />
-
-        {/* <ImgParent>
-          {event2.map((item) => {
-            return (
-              <ImgChild key={item.id} onClick={() => getImg(item.imgSrc)}>
-                <ImgBox src={item.imgSrc} alt="img" />
-                <ImgTitle>{item.title}</ImgTitle>
-              </ImgChild>
-            );
-          })}
-        </ImgParent> */}
       </Container>
 
       <BackColor className="outdorEvent">
@@ -282,17 +205,6 @@ const OuttdorEvents = () => {
             {i18n.t("outtdorEvents.triedEvent.outtdorEventDescription")}
           </Text>
           <ImageGallery items={event3} lazyLoad={true} showThumbnails={true} />
-
-          {/* <ImgParent>
-            {event3.map((item) => {
-              return (
-                <ImgChild key={item.id} onClick={() => getImg(item.imgSrc)}>
-                  <ImgBox src={item.imgSrc} alt="img" />
-                  <ImgTitle>{item.title}</ImgTitle>
-                </ImgChild>
-              );
-            })}
-          </ImgParent> */}
         </Container>
       </BackColor>
     </>
