@@ -46,3 +46,12 @@ export const VideoFrame = styled.iframe`
     height: 300px;
   }
 `;
+export const ImgBox = styled.div`
+  width: 460px;
+  height: 315px;
+  margin: 20px;
+  img {
+    width: 78%;
+    height: auto;
+  }
+`;

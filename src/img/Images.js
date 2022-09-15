@@ -29,6 +29,7 @@ import comment5 from "./comment5.png";
 import next from "./btnnext2.png";
 import prev from "./btnback22.png";
 import UpArrow from "./arrow up.jpg";
+import edina from "./sitehoz/edina.jpg";
 
 export const images = {
   bgImg1,
@@ -62,4 +63,5 @@ export const images = {
   next,
   prev,
   UpArrow,
+  edina,
 };
