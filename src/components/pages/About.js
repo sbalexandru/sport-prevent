@@ -1,7 +1,7 @@
 import React from "react";
 import i18n from "../../i18n";
 
-import { Container, TextArea, VideoFrame, ImgBox } from "./About.styled";
+import { Container, TextArea, ImgBox } from "./About.styled";
 import { images } from "../../img/Images";
 
 // const languageCheck = document.cookie.valueOf();
@@ -27,7 +27,7 @@ const About = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       /> */}
       <ImgBox>
-        <img src={images.edina}></img>
+        <img src={images.edina} alt="edina"></img>
       </ImgBox>
       <TextArea>
         <h2>{i18n.t("about.welcome")}</h2>
