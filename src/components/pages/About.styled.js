@@ -29,7 +29,7 @@ export const TextArea = styled.div`
     line-height: 1.7;
     text-align: justify;
   }
-  @media (max-width: 760px) {
+  @media (max-width: 860px) {
     width: 80%;
   }
   @media (max-width: 360px) {
@@ -50,7 +50,11 @@ export const ImgBox = styled.div`
   width: 460px;
   height: 315px;
   margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
+    padding-top: 50px;
     width: 78%;
     height: auto;
   }

@@ -15,20 +15,30 @@ const Footer = () => {
     <Container className="contacts-section" id="contacts">
       <Title>{i18n.t("footer.footerTitle")}</Title>
       <Contact>
-        <Icon href="#" alt="Facebook" className="facebook">
+        <Icon
+          href="https://www.facebook.com/SportPrevent-100448171573303"
+          alt="Facebook"
+          className="facebook"
+          target="_blank"
+        >
           <FontAwesomeIcon icon={faFacebookSquare} />
         </Icon>
         <Icon href="mailto:#" alt="Mail" className="mail">
           <FontAwesomeIcon icon={faEnvelope} />
         </Icon>
 
-        <Icon href="#" alt="Instagram" className="instagram">
+        <Icon
+          href="https://www.instagram.com/sportprevent2020/"
+          alt="Instagram"
+          className="instagram"
+          target="_blank"
+        >
           <FontAwesomeIcon icon={faInstagram} />
         </Icon>
       </Contact>
       <Creator>
         <FontAwesomeIcon icon={faCopyright} />
-        <a href="https://alex-code.netlify.app/" alt="Creator">
+        <a href="https://alex-code.netlify.app/" alt="Creator" target="_blank">
           <h2>Sabău Alexandru</h2>
         </a>
       </Creator>
