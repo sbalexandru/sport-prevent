@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container } from "./Home.styled";
 import { images } from "../../img/Images";
 import BackgroundSlideshow from "react-background-slideshow";

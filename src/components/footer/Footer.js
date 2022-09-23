@@ -19,8 +19,8 @@ const Footer = () => {
           href="https://www.facebook.com/SportPrevent-100448171573303"
           alt="Facebook"
           className="facebook"
+          rel="noreferrer noopener"
           target="_blank"
-          rel="noreferrer"
         >
           <FontAwesomeIcon icon={faFacebookSquare} />
         </Icon>
@@ -32,8 +32,8 @@ const Footer = () => {
           href="https://www.instagram.com/sportprevent2020/"
           alt="Instagram"
           className="instagram"
+          rel="noreferrer noopener"
           target="_blank"
-          rel="noreferrer"
         >
           <FontAwesomeIcon icon={faInstagram} />
         </Icon>
