@@ -20,6 +20,7 @@ const Footer = () => {
           alt="Facebook"
           className="facebook"
           target="_blank"
+          rel="noreferrer"
         >
           <FontAwesomeIcon icon={faFacebookSquare} />
         </Icon>
@@ -32,6 +33,7 @@ const Footer = () => {
           alt="Instagram"
           className="instagram"
           target="_blank"
+          rel="noreferrer"
         >
           <FontAwesomeIcon icon={faInstagram} />
         </Icon>

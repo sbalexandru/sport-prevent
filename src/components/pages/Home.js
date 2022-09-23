@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "./Home.styled";
 import { images } from "../../img/Images";
 import BackgroundSlideshow from "react-background-slideshow";
-import useWindowDimensions from "./WindowDimensions";
+import useWindowDimensions from "./WindowDimensions.js";
 
 const WelcomeScreen = () => {
   let isDesktop = useWindowDimensions().width >= 1100;
   let isTablet = 413 >= useWindowDimensions().width;
   let isPhone = useWindowDimensions().width <= 412;
-
   function window() {
     if (isDesktop === true) {
       return (
@@ -46,7 +45,6 @@ const WelcomeScreen = () => {
             ]}
             animationDelay={2500}
           />
-          {console.log("phone")}
         </>
       );
     }
